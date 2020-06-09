@@ -24,8 +24,8 @@ git clone https://github.com/gcairesdev/sbma-ong
 Foto | Nome | GitHub | Likedin | E-mail
 ---- | ---- | ------ | ------- | ------
 <img src="https://avatars1.githubusercontent.com/u/54117888?s=460&u=aa7d6143c4e1fdab1ffa6e5fd5ebfe64572f2eae&v=4" width="100px"> | Guilherme Caires | [gcairesdev](https://github.com/gcairesdev) | [Linkedin](https://linkedin.com/in/guilherme-caires/) | contatogcaires@gmail.com
-<img src="https://avatars2.githubusercontent.com/u/56545903?s=400&u=7445f50f4a7c02a76fef37d74a1f84b2bf2c7109&v=4" width="100px"> | Jefferson Eloy   | [gcairesdev](https://github.com/jeffeloy) | [Linkedin](https://www.linkedin.com/in/jefferson-eloy/) | contatojeloydev@gmail.com
-<img src="https://avatars1.githubusercontent.com/u/57624036?s=400&u=9e139b0f216143ac1c83092093efa86a051db098&v=4" width="100px"> | Júlio Cézar 		  | [gcairesdev](https://github.com/juliofilhodeveloper) | [Linkedin](https://www.linkedin.com/in/j%C3%BAlio-c%C3%A9zar-filho-66294719a/) | contatojotaj@gmail.com
+<img src="https://avatars2.githubusercontent.com/u/56545903?s=400&u=7445f50f4a7c02a76fef37d74a1f84b2bf2c7109&v=4" width="100px"> | Jefferson Eloy   | [jeffeloy](https://github.com/jeffeloy) | [Linkedin](https://www.linkedin.com/in/jefferson-eloy/) | contatojeloydev@gmail.com
+<img src="https://avatars1.githubusercontent.com/u/57624036?s=400&u=9e139b0f216143ac1c83092093efa86a051db098&v=4" width="100px"> | Júlio Cézar 		  | [juliofilhodeveloper](https://github.com/juliofilhodeveloper) | [Linkedin](https://www.linkedin.com/in/j%C3%BAlio-c%C3%A9zar-filho-66294719a/) | contatojotaj@gmail.com
 
 ## 🤝 Contribuindo
 
