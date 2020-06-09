@@ -1,45 +1,35 @@
-# Nome do Produto
-> Descrição curta do que o seu projeto faz.
+# 🤝 Sociedade Beneficente Montepio dos Artífices
+> Sistema de controle administrativo interno da ONG.
 
 [![Code Size][code-size]][code-url]
 [![License][MIT-license]][MIT-url]
 [![Realese][version]][version-url]
 
-Um a dois parágrafos falando sobre seu produto e o que ele faz.
-
-🇧🇷 Versão em português
-
-🇺🇸 [Versão em inglês](.github/README-EN.md)
-
-<p align="center">
-    <img src=".github/img/header.png"></img>
-</p>
+Controla as doações realizadas, gastos, destino de doações, eventos...
 
 ## 🎯 Objetivo
 
-Fale um pouco sobre o objetivo do seu projeto.
+O objetivo do atual projeto, é gerenciar a ONG de maneira digital. Disponibilizando um site e um dashboard para que o público conheça a instituição, e os voluntários/funcionários possam administrar as questões internas da ONG, como por exemplo o controle de despesas, entrada de doações...
 
 ## ✒️ Justificativa
 
-Existe alguma justificativa do porquê você desenvolveu esse projeto?
+Projeto Final de Curso, desenvolvido durante o curso Desenvolvimento de Sistemas, no SENAI Dendezeiros - BA.
 
 ## 👷 Instalação
 
 Clone o repositório:
 
 ```git
-git clone https://github.com/gcairesdev/projeto
+git clone https://github.com/gcairesdev/sbma-ong
 ```
 
-## 👨‍🏫 Exemplo de uso
-
-Alguns exemplos motivadores e úteis de como seu produto pode ser usado. Apimente isso com blocos de código e potencialmente mais capturas de tela.
-
-## 👨🏼‍💻 Autor
+## 👨🏼‍💻 Autores
 
 Foto | Nome | GitHub | Likedin | E-mail
 ---- | ---- | ------ | ------- | ------
 <img src="https://avatars1.githubusercontent.com/u/54117888?s=460&u=aa7d6143c4e1fdab1ffa6e5fd5ebfe64572f2eae&v=4" width="100px"> | Guilherme Caires | [gcairesdev](https://github.com/gcairesdev) | [Linkedin](https://linkedin.com/in/guilherme-caires/) | contatogcaires@gmail.com
+<img src="https://avatars2.githubusercontent.com/u/56545903?s=400&u=7445f50f4a7c02a76fef37d74a1f84b2bf2c7109&v=4" width="100px"> | Jefferson Eloy   | [gcairesdev](https://github.com/jeffeloy) | [Linkedin](https://www.linkedin.com/in/jefferson-eloy/) | contatojeloydev@gmail.com
+<img src="https://avatars1.githubusercontent.com/u/57624036?s=400&u=9e139b0f216143ac1c83092093efa86a051db098&v=4" width="100px"> | Júlio Cézar 		  | [gcairesdev](https://github.com/juliofilhodeveloper) | [Linkedin](https://www.linkedin.com/in/j%C3%BAlio-c%C3%A9zar-filho-66294719a/) | contatojotaj@gmail.com
 
 ## 🤝 Contribuindo
 
@@ -53,15 +43,15 @@ Este projeto está sob a [Licença MIT](./LICENSE.md).
 ---
 
 <p align="center">
-    Feito com :heart: por <a href="https://github.com/gcairesdev">Guilherme Caires</a>
+    Feito com :heart: por <a href="https://github.com/gcairesdev/sbma-ong">Sociedade Montepio dos Artífices</a>
 </p>
 
 <!-- Markdown link & img dfn's -->
-[code-size]: https://img.shields.io/github/languages/code-size/gcairesdev/project-template
-[code-url]: https://github.com/gcairesdev/project-template
+[code-size]: https://img.shields.io/github/languages/code-size/gcairesdev/sbma-ong
+[code-url]: https://github.com/gcairesdev/sbma-ong
 
-[MIT-license]: https://img.shields.io/github/license/gcairesdev/project-template
-[MIT-url]: https://github.com/gcairesdev/project-template/blob/master/LICENSE.md
+[MIT-license]: https://img.shields.io/github/license/gcairesdev/sbma-ong
+[MIT-url]: https://github.com/gcairesdev/sbma-ong/blob/master/LICENSE.md
 
-[version]: https://img.shields.io/github/v/release/gcairesdev/project-template?include_prereleases
-[version-url]: https://github.com/gcairesdev/project-template
+[version]: https://img.shields.io/github/v/release/gcairesdev/sbma-ong?include_prereleases
+[version-url]: https://github.com/gcairesdev/sbma-ong
