@@ -1,10 +1,6 @@
 # 🤝 Sociedade Beneficente Montepio dos Artífices
 > Sistema de controle administrativo interno da ONG.
 
-[![Code Size][code-size]][code-url]
-[![License][MIT-license]][MIT-url]
-[![Realese][version]][version-url]
-
 Controla as doações realizadas, gastos, destino de doações, eventos...
 
 ## 🎯 Objetivo
@@ -45,13 +41,3 @@ Este projeto está sob a [Licença MIT](./LICENSE.md).
 <p align="center">
     Feito com :heart: por <a href="https://github.com/gcairesdev/sbma-ong">Sociedade Montepio dos Artífices</a>
 </p>
-
-<!-- Markdown link & img dfn's -->
-[code-size]: https://img.shields.io/github/languages/code-size/gcairesdev/sbma-ong
-[code-url]: https://github.com/gcairesdev/sbma-ong
-
-[MIT-license]: https://img.shields.io/github/license/gcairesdev/sbma-ong
-[MIT-url]: https://github.com/gcairesdev/sbma-ong/blob/master/LICENSE.md
-
-[version]: https://img.shields.io/github/v/release/gcairesdev/sbma-ong?include_prereleases
-[version-url]: https://github.com/gcairesdev/sbma-ong
