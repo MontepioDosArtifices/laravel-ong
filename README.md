@@ -16,7 +16,19 @@ Projeto Final de Curso, desenvolvido durante o curso Desenvolvimento de Sistemas
 Clone o repositório:
 
 ```git
-git clone https://github.com/gcairesdev/sbma-ong
+git clone https://github.com/MontepioDosArtifices/ong
+```
+
+Navegue para a pasta:
+
+```sh
+cd ong
+```
+
+Execute:
+
+```sh
+php artisan serve
 ```
 
 ## 👨🏼‍💻 Autores
@@ -26,6 +38,8 @@ Foto | Nome | GitHub | Likedin | E-mail
 <img src="https://avatars1.githubusercontent.com/u/54117888?s=460&u=aa7d6143c4e1fdab1ffa6e5fd5ebfe64572f2eae&v=4" width="100px"> | Guilherme Caires | [gcairesdev](https://github.com/gcairesdev) | [Linkedin](https://linkedin.com/in/guilherme-caires/) | contatogcaires@gmail.com
 <img src="https://avatars2.githubusercontent.com/u/56545903?s=400&u=7445f50f4a7c02a76fef37d74a1f84b2bf2c7109&v=4" width="100px"> | Jefferson Eloy   | [jeffeloy](https://github.com/jeffeloy) | [Linkedin](https://www.linkedin.com/in/jefferson-eloy/) | contatojeloydev@gmail.com
 <img src="https://avatars1.githubusercontent.com/u/57624036?s=400&u=9e139b0f216143ac1c83092093efa86a051db098&v=4" width="100px"> | Júlio Cézar 		  | [juliofilhodeveloper](https://github.com/juliofilhodeveloper) | [Linkedin](https://www.linkedin.com/in/j%C3%BAlio-c%C3%A9zar-filho-66294719a/) | contatojotaj@gmail.com
+<img src="https://avatars2.githubusercontent.com/u/65911548?s=400&u=d949e2f5fade03214b125295142ef0acc3944c74&v=4" width="100px"> | Danilo Vieira 		  | [danvieirass](https://github.com/danvieirass) | [Linkedin](https://www.linkedin.com/in/danilo-vieira-411569196/) | contatodanilovs@gmail.com
+<img src="https://avatars2.githubusercontent.com/u/65900911?s=400&v=4" width="100px"> | Douglas Querino		  | [dougln](https://github.com/dougln) | [Linkedin](https://www.linkedin.com/in/douglas-querino-b440861a2) | Douglasmichel31@gmail.com
 
 ## 🤝 Contribuindo
 
