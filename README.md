@@ -25,6 +25,12 @@ Navegue para a pasta:
 cd ong
 ```
 
+Instale as dependências:
+
+```sh
+composer install
+```
+
 Execute:
 
 ```sh
