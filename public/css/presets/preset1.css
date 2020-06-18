@@ -1,0 +1,113 @@
+a:hover,
+.navbar-expand-lg .navbar-nav li.current>a, 
+.navbar-expand-lg .navbar-nav li a:hover, 
+.tr-menu .navbar.menu-bg .navbar-nav li.current>a, 
+.tr-menu .navbar.menu-bg .navbar-nav li a:hover,
+.btn.btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle,
+.navbar-expand-lg .navbar-nav .tr-dropdown-menu li a:hover, 
+.tr-menu .navbar.menu-bg .navbar-nav .tr-dropdown-menu li a:hover, 
+.tr-menu .navbar.menu-bg .navbar-nav .tr-dropdown-menu li.active>a, 
+.navbar-expand-lg .navbar-nav .tr-dropdown-menu li.active>a,
+.featured h2, .header-style-1 .title-before:before, .tr-service a:hover,
+.tr-service a:after, .tr-overlay .btn.btn-primary, .team-social a,
+.tr-post a:hover, .tr-icon-style-1,
+.footer-bottom span a:hover, .widget_search .btn:hover,
+.widget_categories li:hover, .widget_categories li:hover a,
+.tr-replay a, .section-before a:hover, .entry-footer li.tr-date a,
+.footer-widget ul li a:hover, .footer-widget ul li:hover:before,
+.widget_search .search-submit:hover, .search-form .search-submit:hover,
+.post-password-form input[type='submit']:hover,
+.widget.recent_donation .tr-amount, .widget.widget_donation .tr-amount,
+.widget.recent_donation span.tr-title a:hover,
+.widget_donation .rating-count, .navbar-toggler,
+.btn-full.btn.btn-primary:hover,
+.tr-menu .navbar-nav .tr-dropdown.current>.icon,
+.tr-menu .navbar-nav .tr-dropdown:hover>.icon,
+.banner-info .btn.btn-primary:hover,
+.style-chooser-inner .toggler,
+ .navbar-expand-lg .navbar-nav .tr-dropdown-menu li a:hover,
+ .tr-menu .navbar.menu-bg .navbar-nav .tr-dropdown-menu li a:hover,
+ .tr-menu .navbar.menu-bg .navbar-nav .tr-dropdown-menu li.active>a,
+ .navbar-expand-lg .navbar-nav .tr-dropdown-menu li.active>a  {
+	color: #00AEEF;
+}
+
+
+.btn.btn-primary,
+.btn.btn-primary:hover, 
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-primary.dropdown-toggle,
+.banner-info .btn.btn-primary:hover,
+.form-control:focus,
+.widget_search .search-field:focus,
+.tagcloud a:hover, .widget_search .search-submit,
+.search-form .search-submit,
+.not-found .search-field:focus,
+.post-password-form input[type='password']:focus,
+.post-password-form input[type='submit'],
+.widget_donation .progress,
+.widget_donation .rating-count,
+.navbar-toggler {
+	border-color: #00AEEF;
+}
+
+.navbar-expand-lg .navbar-nav li a:before,
+.tr-menu .btn.btn-primary:hover:before,
+.btn.btn-primary:after,
+.navbar-expand-lg .navbar-nav .tr-dropdown-menu li a, 
+.tr-menu .navbar.menu-bg .navbar-nav .tr-dropdown-menu li a,
+.banner-info .btn.btn-primary:before,
+.title-before:before, .tr-overlay .btn.btn-primary:before,
+.slick-dots li:hover button, .slick-dots li.slick-active button, 
+.tr-slider-6 .slick-dots li:hover button, 
+.tr-slider-6 .slick-dots li.slick-active button,
+.subscribe-info .btn.btn-primary,
+.tagcloud a:before, .tagcloud a:hover,
+.tr-comment:before, .pagination li a:hover, 
+.pagination li span.current,
+blockquote:before, .widget_search .search-submit,
+.search-form .search-submit,
+.widget_donation .progress-bar,
+.tr-indicators.carousel-indicators li:hover, 
+.tr-indicators.carousel-indicators li.active,
+ .btn-full.btn.btn-primary {
+	background-color: #00AEEF;
+}
+
+.subscribe-info .form-control {
+	border-bottom-color: #00AEEF;
+}
+
+
+.causes-thumb:before,
+.team-social ul,
+.gallery-content .photo-overlay {
+	background-color: rgba(0, 174, 239, 0.8);
+}
+
+.section-before:before {
+	background-color: rgba(0, 174, 239, 0.9);
+}
+
+.widget_donation .rating-count:before {
+	border-top-color: #00AEEF;
+}
+
+
+@media (max-width: 991px) {
+	.navbar-expand-lg .navbar-nav li.current > a, 
+	.navbar-expand-lg .navbar-nav li a:hover, 
+	.tr-menu .navbar.menu-bg .navbar-nav li.current > a, 
+	.tr-menu .navbar.menu-bg .navbar-nav li a:hover,
+	.navbar-expand-lg .navbar-nav li.current > a, 
+	.navbar-expand-lg .navbar-nav li a:hover, 
+	.tr-menu .navbar.menu-bg .navbar-nav li.current > a, 
+	.tr-menu .navbar.menu-bg .navbar-nav li a:hover	{
+		color: #00AEEF;
+	}
+	.header-style-1 .title-before::before {
+		background-color: #00AEEF;
+	}
+}
