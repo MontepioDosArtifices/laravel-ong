@@ -31,7 +31,19 @@ Instale as dependências:
 composer install
 ```
 
-Execute:
+Crie o _.env_:
+
+```sh
+cp .env.example .env
+```
+
+Gere a _app key_:
+
+```sh
+php artisan key:generate
+```
+
+Inicie o servidor:
 
 ```sh
 php artisan serve
