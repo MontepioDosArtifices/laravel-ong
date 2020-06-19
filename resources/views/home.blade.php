@@ -17,13 +17,16 @@
   <link id="preset" rel="stylesheet" href="css/preset1.css">
   <link rel="stylesheet" href="./css/responsive.css">
 
-  <link rel="icon" href="">
-  <link rel="apple-touch-icon" sizes="144x144" href="">
-  <link rel="apple-touch-icon" sizes="114x114" href="">
-  <link rel="apple-touch-icon" sizes="72x72" href="">
-  <link rel="apple-touch-icon" sizes="57x57" href="">
-  <link rel="apple-touch-icon" sizes="57x57" href="">
-  <link rel="apple-touch-icon" sizes="57x57" href="">
+  <link rel="icon" href="images/favicon/favicon.png" sizes="16x16">
+  <link rel="icon" href="images/favicon/favicon-32.png" sizes="32x32">
+  <link rel="icon" href="images/favicon/favicon-48.png" sizes="48x48">
+  <link rel="icon" href="images/favicon/favicon-64.png" sizes="64x64">
+  <link rel="icon" href="images/favicon/favicon-128.png" sizes="128x128">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/favicon-apple-144.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/favicon-apple-114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/favicon-apple-72.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/favicon-apple-57.png">
 
   <title>Associação MontePio dos Artífices</title>
 </head>
@@ -745,9 +748,12 @@
         </div>
         <div class="footer-social">
           <ul class="global-list">
-            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+            <li>
+              <a href="/restrita">
+                Area restrita
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </div><!-- /.container -->
