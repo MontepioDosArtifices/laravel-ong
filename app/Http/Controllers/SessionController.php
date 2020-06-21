@@ -13,4 +13,10 @@ class SessionController extends Controller
       session()->put($key, $value);
     }
   }
+
+  public function destroy()
+  {
+    Session::flush();
+    return view('user-login');
+  }
 }

@@ -16,3 +16,5 @@ Route::get('/dashboard/usuarios/busca', function () { return view('user-search')
 Route::get('/dashboard/doacoes/', function () { return view('donate-list'); })->name('donate.list');
 
 Route::get('/dashboard/calendario/', function () { return view('calendar'); })->name('calendar');
+
+Route::get('/logout', 'SessionController@destroy')->name('logout');

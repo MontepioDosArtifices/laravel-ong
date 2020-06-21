@@ -167,7 +167,7 @@
                     Configuração da conta
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="javascript:void(0)">
+                <a class="dropdown-item" href="{{route('logout')}}">
                   <i
                     data-feather="power"
                     class="svg-icon mr-2 ml-1">
