@@ -13,10 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-  return view('home');
-});
+Route::get('/', function () { return view('home'); })->name('home');
 
-Route::get('/restrita', function () {
-  return view('restricted-area');
-});
+Route::get('/dashboard/login/', function () { return view('user-login'); })->name('user.login');
+
+Route::get('/dashboard/usuarios/cadastro', 'UserController@createForm')->name('user.create.form');
+Route::post('/dashboard/usuarios/cadastro/enviado/', 'UserController@create')->name('user.create');

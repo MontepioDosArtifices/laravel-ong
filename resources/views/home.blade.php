@@ -296,7 +296,7 @@
               </div>
               <div class="fun-fact-info">
                 <p>Total Arrecadado</p>
-                <p class="counter">R$ <span>199.750</span></p>
+                <p class="counter">R$ <span>30.750</span></p>
               </div>
             </li>
             <li class="fun-fact">
@@ -749,7 +749,7 @@
         <div class="footer-social">
           <ul class="global-list">
             <li>
-              <a href="/restrita">
+              <a href="{{ route('user.login') }}">
                 Area restrita
                 <i class="fa fa-lock" aria-hidden="true"></i>
               </a>
