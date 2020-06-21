@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Http\Controllers\SessionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
 
 class UserController extends Controller
 {
@@ -33,10 +35,19 @@ class UserController extends Controller
   {
     $credentials = $request->only('email', 'password');
 
-    if (Auth::attempt($credentials)) {
-      return redirect()->intended('dashboard');
-    }
+    if (!Auth::attempt($credentials)) return redirect()->route('user.login');
 
-    return redirect()->route('user.login');
+    $this->createSession($request->email);
+
+    return redirect()->intended('dashboard');
+  }
+
+  public function createSession($email)
+  {
+    $user = new User();
+    $userData = $user->searchAllUserData($email);
+
+    $sessionController = new SessionController();
+    $sessionController->create($userData);
   }
 }

@@ -139,7 +139,7 @@
                     </span>
                     <span
                       class="text-dark">
-                      Fulano
+                      {{session('name')}}
                     </span>
                     <i
                       data-feather="chevron-down"
