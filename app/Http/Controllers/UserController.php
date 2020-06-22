@@ -7,7 +7,6 @@ use App\Http\Controllers\SessionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Session;
 
 class UserController extends Controller
 {
@@ -40,6 +39,14 @@ class UserController extends Controller
     $this->createSession($request->email);
 
     return redirect()->intended('dashboard');
+  }
+
+  public function listAll()
+  {
+    $user = new User();
+    $allUsers = $user->getAllUsers();
+
+    return view('user-list', ['allUsers' => $allUsers]);
   }
 
   public function createSession($email)

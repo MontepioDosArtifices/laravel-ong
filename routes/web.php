@@ -9,9 +9,9 @@ Route::get('/dashboard', function() { return view('dashboard'); })->name('dashbo
 Route::get('/dashboard/login/', function () { return view('user-login'); })->name('user.login');
 Route::post('/dashboard/login/enviado', 'UserController@login')->name('user.login.send');
 
+Route::get('/dashboard/usuarios', 'UserController@listAll')->name('users.list');
 Route::get('/dashboard/usuarios/cadastro', 'UserController@createForm')->name('user.create.form');
 Route::post('/dashboard/usuarios/cadastro/enviado/', 'UserController@create')->name('user.create');
-Route::get('/dashboard/usuarios/busca', function () { return view('user-search'); })->name('user.search');
 
 Route::get('/dashboard/doacoes/', function () { return view('donate-list'); })->name('donate.list');
 

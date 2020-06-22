@@ -47,6 +47,56 @@
         <input class="form-control custom-shadow custom-radius border-0 bg-white"style="width:50%;"; type="search" name="busca" placeholder="Busca" aria-label="Search">
       </div>
     </form>
+    <div class="table-responsive" style="margin-top: 30px">
+      <table id="zero_config" class="table table-striped table-bordered no-wrap">
+        <thead>
+          <tr>
+            <th>Foto</th>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>E-mail</th>
+            <th>Telefone</th>
+            <th>Cargo</th>
+            <th>Editar</th>
+            <th>Apagar</th>
+          </tr>
+        </thead>
+        <tbody>
+          @foreach ($allUsers as $user)
+            <tr>
+              <td>
+                <img src="{{ url("$user->photo") }}" width="60px" height="60px" alt="Foto" />
+              </td>
+              <td>
+                {{ $user->name }}
+              </td>
+              <td>
+                {{ $user->cpf }}
+              </td>
+              <td>
+                {{ $user->email }}
+              </td>
+              <td>
+                {{ $user->phone }}
+              </td>
+              <td>
+                Cargo
+              </td>
+              <td>
+                <a href="{{url("dashboard/usuarios/editar/$user->id")}}">
+                  <i class="ti-pencil"></i>
+                </a>
+              </td>
+              <td>
+                <a href="{{url("dashboard/usuarios/apagar/$user->id")}}">
+                  <i class="ti-trash"></i>
+                </a>
+              </td>
+            </tr>
+          @endforeach
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
 @endsection
