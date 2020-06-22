@@ -217,9 +217,9 @@
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a href="{{url('/dashboard/usuarios/')}}" class="sidebar-link">
+                  <a href="{{url('/dashboard/usuarios')}}" class="sidebar-link">
                     <span class="hide-menu">
-                      Listar/Editar
+                      Listar
                     </span>
                   </a>
                 </li>
@@ -307,7 +307,7 @@
               >
                 <i data-feather="mouse-pointer" class="feather-icon"></i>
                 <span class="hide-menu">
-                  Ver
+                  Ver site
                 </span>
               </a>
             </li>

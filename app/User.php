@@ -42,4 +42,9 @@ class User extends Authenticatable
     {
       return $data = User::select("*")->where('email', $email)->first()->attributes;
     }
+
+    public function getAllUsers()
+    {
+      return $allUsers = DB::select('select * from users');
+    }
 }
