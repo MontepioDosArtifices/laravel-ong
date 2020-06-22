@@ -16,7 +16,7 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb m-0 p-0">
               <li class="breadcrumb-item">
-                <a href="index.html" class="text-muted">
+                <a href="#" class="text-muted">
                   Administrativo
                 </a>
               </li>
@@ -25,14 +25,6 @@
               </li>
             </ol>
           </nav>
-        </div>
-      </div>
-      <div class="col-5 align-self-center">
-        <div class="customize-input float-right">
-          <select class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
-            <option selected>Jul 01</option>
-            <option value="1">Jun 01</option>
-          </select>
         </div>
       </div>
     </div>

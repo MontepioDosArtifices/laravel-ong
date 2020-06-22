@@ -16,15 +16,18 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb m-0 p-0">
               <li class="breadcrumb-item">
-                <a href="{{url('/dashboard/financeiro')}}" class="text-muted">
-                  Despesas
+                <a href="#" class="text-muted">
+                  Financeiro
                 </a>
+              </li>
+              <li class="breadcrumb-item text-muted active" aria-current="page">
+                Despesas
               </li>
             </ol>
           </nav>
         </div>
       </div>
-        <div class="table-responsive">
+        <div class="table-responsive" style="margin-top: 30px;">
           <table id="zero_config" class="table table-striped table-bordered no-wrap">
             <thead>
               <tr>
@@ -59,33 +62,6 @@
                   </td>
                 </tr>
                 @endforeach
-              <ul class="pagination float-right">
-                <li class="page-item disabled">
-                  <a class="page-link" href="#" tabindex="-1">
-                    Anterior
-                  </a>
-                </li>
-                <li cass="page-item active">
-                  <a class="page-link" href="#">
-                    1
-                  </a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">2 <span class="sr-only">
-                    (current)
-                  </span></a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">
-                    3
-                  </a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">
-                    Próximo
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
