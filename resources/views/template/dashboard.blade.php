@@ -272,9 +272,9 @@
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a href="{{url('/dashboard/despesas/categoria')}}" class="sidebar-link">
+                  <a href="{{url('/dashboard/despesas/categoria/lista')}}" class="sidebar-link">
                     <span class="hide-menu">
-                      Listar/Editar categoria
+                      Listar
                     </span>
                   </a>
                 </li>
@@ -288,7 +288,7 @@
                 <li class="sidebar-item">
                   <a href="{{url('/dashboard/despesas')}}" class="sidebar-link">
                     <span class="hide-menu">
-                      Listar/Editar despesas
+                      Listar
                     </span>
                   </a>
                 </li>

@@ -25,3 +25,5 @@ Route::get('/dashboard/doacoes/', function () { return view('donate-list'); })->
 Route::get('/dashboard/calendario/', function () { return view('calendar'); })->name('calendar');
 
 Route::get('/logout', 'SessionController@destroy')->name('logout');
+
+Route::get('/dashboard/despesas/categoria/lista', 'ExpenseController@listCategories')->name('expenses.category.list');

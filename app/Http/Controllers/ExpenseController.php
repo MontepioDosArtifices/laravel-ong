@@ -17,6 +17,13 @@ class ExpenseController extends Controller
     return view('expenses', ['allCategories' => $allCategories]);
   }
 
+  public function listCategories(){
+    $categoryExpenses = new CategoryExpense();
+    $allCategories = $categoryExpenses->listAll();
+
+    return view('category-list', ['allCategories' => $allCategories]);
+  }
+
   public function create(Request $request)
   {
     $expense = new Expense();
