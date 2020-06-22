@@ -29,9 +29,10 @@
 	<div class="wrapper">
 		<a href="#"><img src="{{url('images/logo.png')}}" width="150px" alt="MontePio dos Artífices"></a>
 		<div id="formContent">
-			<form method="POST" action="">
-				<input type="email" id="login" name="login" placeholder="E-mail" required>
-				<input type="password" id="password" name="senha" placeholder="Senha" required>
+      <form method="post" action="{{route('user.login.send')}}">
+        @csrf
+				<input type="email" id="login" name="email" placeholder="E-mail" required>
+				<input type="password" id="password" name="password" placeholder="Senha" required>
 				<input type="submit" value="Entrar">
 			</form>
 			<div id="formFooter">
