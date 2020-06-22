@@ -255,17 +255,44 @@
                 </span>
               </a>
             </li>
+            </li>
             <li class="sidebar-item">
-              <a
-                href="{{url('dashboard/despesas')}}"
-                class="sidebar-link"
-                aria-expanded="false"
-              >
-                <i data-feather="dollar-sign" class="feather-icon"></i>
+              <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
+                <i data-feather="file-text" class="feather-icon"></i>
                 <span class="hide-menu">
                   Despesas
                 </span>
               </a>
+              <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                <li class="sidebar-item">
+                  <a href="{{url('/dashboard/despesas/categoria/cadastro')}}" class="sidebar-link">
+                    <span class="hide-menu">
+                      Cadastrar categoria
+                    </span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="{{url('/dashboard/despesas/categoria')}}" class="sidebar-link">
+                    <span class="hide-menu">
+                      Listar/Editar categoria
+                    </span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="{{url('/dashboard/despesas/cadastro')}}" class="sidebar-link">
+                    <span class="hide-menu">
+                      Cadastrar despesas
+                    </span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="{{url('/dashboard/despesas')}}" class="sidebar-link">
+                    <span class="hide-menu">
+                      Listar/Editar despesas
+                    </span>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="list-divider"></li>
             <li class="nav-small-cap">
