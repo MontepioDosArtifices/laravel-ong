@@ -14,6 +14,7 @@ Route::get('/dashboard/usuarios/cadastro', 'UserController@createForm')->name('u
 Route::post('/dashboard/usuarios/cadastro/enviado/', 'UserController@create')->name('user.create');
 Route::get('/dashboard/usuarios/editar/{user}', 'UserController@editForm')->name('user.edit.form');
 Route::put('/dashboard/usuarios/editar/{user}/enviado', 'UserController@edit')->name('user.edit');
+Route::delete('/dashboard/usuarios/apagar/{user}', 'UserController@delete')->name('user.delete');
 
 Route::get('/dashboard/despesas/categoria/cadastro', 'CategoryExpenseController@createForm')->name('category.expenses.form');
 Route::post('/dashboard/despesas/categoria/cadastro/enviado', 'CategoryExpenseController@registerCategory')->name('category.expenses.create');
