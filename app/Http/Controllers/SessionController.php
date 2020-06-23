@@ -2,21 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Contracts\Session\Session as SessionSession;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
 class SessionController extends Controller
 {
-  public function create(Array $list = [])
+  public function create($user)
   {
-    foreach ($list as $key => $value) {
-      session()->put($key, $value);
-    }
+    return Session::put('name', $user->name);
   }
 
   public function destroy()
   {
     Session::flush();
-    return view('user-login');
+    return redirect()->route('user.login');
   }
 }

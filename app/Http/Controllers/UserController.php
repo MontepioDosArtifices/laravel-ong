@@ -3,85 +3,74 @@
 namespace App\Http\Controllers;
 
 use App\User;
-use App\Http\Controllers\SessionController;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
-  public function createForm()
+
+  public function index()
+  {
+    $allUsers = User::all();
+    return view('user-list', ['allUsers'=> $allUsers]);
+  }
+
+  public function create()
   {
     return view('user-create');
   }
 
-  public function editForm(User $user)
+  public function store(Request $request)
+  {
+    if ($request->password != $request->password_confirmed)
+      return redirect()->route('user.create');
+
+    $user = new User();
+    $user->name     = $request->name;
+    $user->cpf      = $request->cpf;
+    $user->email    = $request->email;
+    $user->phone    = $request->phone;
+    $user->office    = $request->office;
+    $user->password = Hash::make($request->password);
+    $user->save();
+
+    return redirect()->route('user.index');
+  }
+
+  public function show(User $user)
+  {
+    //
+  }
+
+  public function edit(User $user)
   {
     return view('user-edit', ['user' => $user]);
   }
 
-  public function edit(User $user, Request $request)
+  public function update(Request $request, User $user)
   {
-    $user->name = $request->name;
-    $user->cpf = $request->cpf;
-    $user->phone = $request->phone;
+    if ($request->password != $request->password_confirmed)
+      return redirect()->route('user.create');
+
+    if (!empty($request->password))
+      $user->password = Hash::make($request->password);
+
+    if (filter_var($request->email, FILTER_VALIDATE_EMAIL))
+      $user->email = $request->email;
+
+    $user->name   = $request->name;
+    $user->cpf    = $request->cpf;
+    $user->phone  = $request->phone;
     $user->office = $request->office;
-
-    if (filter_var($request->email, FILTER_VALIDATE_EMAIL)) $user->email = $request->email;
-
-    if (!empty($request->password)) $user->password = Hash::make($request->password);
-
     $user->save();
 
-    return redirect()->route('users.list');
+    return redirect()->route('user.index');
   }
 
-  public function delete(user $user)
+  public function destroy(User $user)
   {
     $user->delete();
-    return redirect()->route('users.list');
-  }
 
-  public function create(Request $request)
-  {
-    if ($request->password != $request->password_confirmed) return redirect()->route('user.create.form');
-
-    $user = new User();
-    $user->name = $request->name;
-    $user->cpf = $request->cpf;
-    $user->email = $request->email;
-    $user->phone = $request->phone;
-    $user->password = Hash::make($request->password);
-    $user->save();
-
-    return redirect()->route('home');
-  }
-
-  public function login(Request $request)
-  {
-    $credentials = $request->only('email', 'password');
-
-    if (!Auth::attempt($credentials)) return redirect()->route('user.login');
-
-    $this->createSession($request->email);
-
-    return redirect()->intended('dashboard');
-  }
-
-  public function listAll()
-  {
-    $user = new User();
-    $allUsers = $user->getAllUsers();
-
-    return view('user-list', ['allUsers' => $allUsers]);
-  }
-
-  public function createSession($email)
-  {
-    $user = new User();
-    $userData = $user->searchAllUserData($email);
-
-    $sessionController = new SessionController();
-    $sessionController->create($userData);
+    return redirect()->route('user.index');
   }
 }

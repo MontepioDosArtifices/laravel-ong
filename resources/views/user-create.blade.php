@@ -30,7 +30,7 @@
     </div>
   </div>
   <div class="container-fluid">
-    <form action="{{route('user.create')}}" method="post">
+    <form action="{{route('user.store')}}" method="post">
       <h1>Dados Pessoais</h1>
       @csrf
       <input type="text" name="name" class="form-control" placeholder="Nome completo" required>

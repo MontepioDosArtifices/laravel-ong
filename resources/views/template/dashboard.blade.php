@@ -46,7 +46,7 @@
               <i class="ti-menu ti-close"></i>
             </a>
             <div class="navbar-brand">
-            <a href="{{url('/dashboard')}}">
+            <a href="{{route('dashboard')}}">
               <h2>
                 <img src="{{url('images/logo.png')}}" alt="ABMA LOGO" width="125px">
               </h2>
@@ -63,7 +63,7 @@
           <ul class="navbar-nav float-right">
             <li class="nav-item d-none d-md-block">
               <a class="nav-link" href="javascript:void(0)">
-                <form method="get" action="{{url('/dashboard')}}">
+                <form method="get" action="{{route('dashboard')}}">
                   <div class="customize-input">
                     <input class="form-control custom-shadow custom-radius border-0 bg-white" type="search" placeholder="Busca" aria-label="Search">
                     <i class="form-control-icon" data-feather="search"></i>
@@ -119,7 +119,7 @@
         <nav class="sidebar-nav">
           <ul id="sidebarnav">
             <li class="sidebar-item">
-              <a class="sidebar-link sidebar-link" href="{{url('/dashboard')}}" aria-expanded="false">
+              <a class="sidebar-link sidebar-link" href="{{route('dashboard')}}" aria-expanded="false">
                 <i data-feather="home" class="feather-icon"></i>
                 <span class="hide-menu">Início</span>
               </a>
@@ -137,14 +137,14 @@
               </a>
               <ul aria-expanded="false" class="collapse  first-level base-level-line">
                 <li class="sidebar-item">
-                  <a href="{{url('/dashboard/usuarios/cadastro')}}" class="sidebar-link">
+                  <a href="{{route('user.create')}}" class="sidebar-link">
                     <span class="hide-menu">
                       Cadastrar funcionário
                     </span>
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a href="{{url('/dashboard/usuarios')}}" class="sidebar-link">
+                  <a href="{{route('user.index')}}" class="sidebar-link">
                     <span class="hide-menu">
                       Listar funcionários
                     </span>
@@ -154,7 +154,7 @@
             </li>
             <li class="sidebar-item">
               <a
-                href="{{url('/dashboard/calendario')}}"
+                href="{{route('calendar')}}"
                 class="sidebar-link sidebar-link"
                 aria-expanded="false"
               >
@@ -172,7 +172,7 @@
             </li>
             <li class="sidebar-item">
               <a
-                href="{{url('/dashboard/doacoes')}}"
+                href="{{route('donate.list')}}"
                 class="sidebar-link"
                 aria-expanded="false"
               >
@@ -192,28 +192,28 @@
               </a>
               <ul aria-expanded="false" class="collapse  first-level base-level-line">
                 <li class="sidebar-item">
-                  <a href="{{url('/dashboard/despesas/categoria/cadastro')}}" class="sidebar-link">
+                  <a href="{{route('category.expenses.form')}}" class="sidebar-link">
                     <span class="hide-menu">
                       Cadastrar categoria
                     </span>
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a href="{{url('/dashboard/despesas/categoria')}}" class="sidebar-link">
+                  <a href="{{route('expenses.category.list')}}" class="sidebar-link">
                     <span class="hide-menu">
                       Listar categoria
                     </span>
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a href="{{url('/dashboard/despesas/cadastro')}}" class="sidebar-link">
+                  <a href="{{route('expenses.form')}}" class="sidebar-link">
                     <span class="hide-menu">
                       Cadastrar despesas
                     </span>
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a href="{{url('/dashboard/despesas')}}" class="sidebar-link">
+                  <a href="{{route('expenses.list')}}" class="sidebar-link">
                     <span class="hide-menu">
                       Listar despesas
                     </span>
@@ -227,7 +227,7 @@
             </li>
             <li class="sidebar-item">
               <a
-                href="{{url('/')}}"
+                href="{{route('home')}}"
                 class="sidebar-link sidebar-link"
                 target="_blank"
                 aria-expanded="false"

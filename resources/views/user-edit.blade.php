@@ -30,7 +30,7 @@
     </div>
   </div>
   <div class="container-fluid">
-    <form action="{{route('user.edit', ['user' => $user->id])}}" method="post">
+    <form action="{{route('user.update', ['user' => $user->id])}}" method="post">
       <h1>Dados Pessoais</h1>
       @csrf
       @method('PUT')

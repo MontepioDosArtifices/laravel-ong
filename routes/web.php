@@ -7,14 +7,11 @@ Route::get('/', function () { return view('home'); })->name('home');
 Route::get('/dashboard', function() { return view('dashboard'); })->name('dashboard');
 
 Route::get('/dashboard/login/', function () { return view('user-login'); })->name('user.login');
-Route::post('/dashboard/login/enviado', 'UserController@login')->name('user.login.send');
+Route::post('/dashboard/login/enviado', 'LoginController@index')->name('user.login.send');
 
-Route::get('/dashboard/usuarios', 'UserController@listAll')->name('users.list');
-Route::get('/dashboard/usuarios/cadastro', 'UserController@createForm')->name('user.create.form');
-Route::post('/dashboard/usuarios/cadastro/enviado/', 'UserController@create')->name('user.create');
-Route::get('/dashboard/usuarios/editar/{user}', 'UserController@editForm')->name('user.edit.form');
-Route::put('/dashboard/usuarios/editar/{user}/enviado', 'UserController@edit')->name('user.edit');
-Route::delete('/dashboard/usuarios/apagar/{user}', 'UserController@delete')->name('user.delete');
+Route::resource('dashboard/usuarios', 'UserController')
+  ->names('user')
+  ->parameters(['usuarios' => 'user']);
 
 Route::get('/dashboard/despesas/categoria/cadastro', 'CategoryExpenseController@createForm')->name('category.expenses.form');
 Route::post('/dashboard/despesas/categoria/cadastro/enviado', 'CategoryExpenseController@registerCategory')->name('category.expenses.create');

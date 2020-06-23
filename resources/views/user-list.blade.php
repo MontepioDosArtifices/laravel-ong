@@ -75,12 +75,12 @@
                 {{ $user->office }}
               </td>
               <td>
-                <a href="{{url("dashboard/usuarios/editar/$user->id")}}">
+                <a href="{{route('user.edit', ['user' => $user->id])}}">
                   <i class="ti-pencil"></i>
                 </a>
               </td>
               <td>
-                <form action="{{route("user.delete", $user->id)}}" method="post">
+                <form action="{{route("user.destroy", $user->id)}}" method="post">
                   @csrf
                   @method('delete')
                   <button type="submit" style="border: 0; background: none; color: red;">
