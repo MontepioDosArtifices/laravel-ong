@@ -16,7 +16,8 @@ class CategoryExpense extends Model
       'name'
   ];
 
-  public function listAll(){
+  public function listAll()
+  {
     return $allCategories = DB::select('select * from category_expenses');
   }
 }

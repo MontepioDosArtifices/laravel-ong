@@ -27,4 +27,6 @@ Route::get('/dashboard/calendario/', function () { return view('calendar'); })->
 
 Route::get('/logout', 'SessionController@destroy')->name('logout');
 
-Route::get('/dashboard/despesas/categoria/lista', 'ExpenseController@listCategories')->name('expenses.category.list');
+Route::get('/dashboard/despesas/categoria', 'ExpenseController@listCategories')->name('expenses.category.list');
+
+Route::get('/dashboard/despesas', 'ExpenseController@listExpenses')->name('expenses.list');

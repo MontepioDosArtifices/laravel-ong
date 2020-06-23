@@ -30,7 +30,7 @@
           </div>
         </div>
         <div class="container-fluid">
-          <form action="{{route('user.create')}}" method="post">
+          <form action="{{route('expenses.create')}}" method="post">
             <h1>Despesas</h1>
             @csrf
             <select name="category_id" class="form-control">
@@ -40,7 +40,6 @@
             </select>
             <input type="text" name="value" class="form-control" placeholder="Valor" required>
             <textarea name="description" class="form-control" cols="30" rows="2" placeholder="Descrição" required></textarea>
-            <input type="text" name="cpf" class="form-control" placeholder="CPF" required>
             <input type="date" name="payment_date" class="form-control" required></br>
             <input type="submit" class="btn btn-primary form-control" value="Cadastrar">
           </form>

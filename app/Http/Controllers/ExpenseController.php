@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\CategoryExpense;
 use App\Expense;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Schema;
 
 class ExpenseController extends Controller
 {
@@ -17,12 +18,23 @@ class ExpenseController extends Controller
     return view('expenses', ['allCategories' => $allCategories]);
   }
 
-  public function listCategories(){
+
+  public function listCategories()
+  {
     $categoryExpenses = new CategoryExpense();
     $allCategories = $categoryExpenses->listAll();
 
     return view('category-list', ['allCategories' => $allCategories]);
   }
+
+  public function listExpenses()
+  {
+    $expenses = new Expense();
+    $allExpenses = $expenses->listAll();
+
+    return view('expenses-list', ['allExpenses' => $allExpenses]);
+  }
+
 
   public function create(Request $request)
   {
