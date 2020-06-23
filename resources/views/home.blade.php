@@ -7,7 +7,7 @@
         <div class="banner-info">
           <h1>Sua contribuição ajuda milhares de vidas</h1>
           <p>Nós fazemos a diferença na vida das pessoas durantes fases difíceis. Contribuindo com medicamento, comida e um lar. Nós fazemos a diferença na vida das pessoas durantes fases difíceis. Contribuindo com medicamento, comida e um lar.</p>
-          <a href="{{ route('donation') }}" class="btn btn-primary">Doar agora</a>
+          <a href="{{ route('donation.form') }}" class="btn btn-primary">Doar agora</a>
         </div><!-- /.banner-info -->
         <div class="tr-featured text-center">
           <div class="row">
