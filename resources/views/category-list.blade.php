@@ -39,10 +39,10 @@
               </tr>
             </thead>
             <tbody>
-                @foreach($allCategories as $category)
+              @foreach($allCategories as $category)
                 <tr>
                   <td>
-                    {{ $category->name}}
+                    {{ $category->name }}
                   </td>
                   <td>
                     {{ $category->created_at}}
@@ -61,7 +61,8 @@
                     </a>
                   </td>
                 </tr>
-                @endforeach
+              @endforeach
+            </tbody>
             </div>
           </div>
         </div>

@@ -17,11 +17,12 @@ Route::put('/dashboard/usuarios/editar/{user}/enviado', 'UserController@edit')->
 
 Route::get('/dashboard/despesas/categoria/cadastro', 'CategoryExpenseController@createForm')->name('category.expenses.form');
 Route::post('/dashboard/despesas/categoria/cadastro/enviado', 'CategoryExpenseController@registerCategory')->name('category.expenses.create');
-
 Route::get('/dashboard/despesas/cadastro', 'ExpenseController@createForm')->name('expenses.form');
 Route::post('/dashboard/despesas/cadastro/enviado', 'ExpenseController@create')->name('expenses.create');
-
-Route::get('/dashboard/usuarios/busca', function () { return view('user-search'); })->name('user.search');
+Route::get('/dashboard/despesas', 'ExpenseController@listExpenses')->name('expenses.list');
+Route::get('/dashboard/despesas/categoria', 'ExpenseController@listCategories')->name('expenses.category.list');
+Route::get('/dashboard/despesas/categoria/editar/{category}', 'CategoryExpenseController@editForm')->name('category.edit.form');
+Route::put('/dashboard/despesas/categoria/editar/{category}/enviado', 'CategoryExpenseController@edit')->name('category.edit');
 
 Route::get('/dashboard/doacoes/', function () { return view('donate-list'); })->name('donate.list');
 
@@ -29,6 +30,3 @@ Route::get('/dashboard/calendario/', function () { return view('calendar'); })->
 
 Route::get('/logout', 'SessionController@destroy')->name('logout');
 
-Route::get('/dashboard/despesas/categoria', 'ExpenseController@listCategories')->name('expenses.category.list');
-
-Route::get('/dashboard/despesas', 'ExpenseController@listExpenses')->name('expenses.list');
