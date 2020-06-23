@@ -139,14 +139,14 @@
                 <li class="sidebar-item">
                   <a href="{{url('/dashboard/usuarios/cadastro')}}" class="sidebar-link">
                     <span class="hide-menu">
-                      Cadastrar
+                      Cadastrar funcionário
                     </span>
                   </a>
                 </li>
                 <li class="sidebar-item">
                   <a href="{{url('/dashboard/usuarios')}}" class="sidebar-link">
                     <span class="hide-menu">
-                      Listar
+                      Listar funcionários
                     </span>
                   </a>
                 </li>

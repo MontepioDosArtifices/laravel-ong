@@ -21,7 +21,7 @@
                 </a>
               </li>
               <li class="breadcrumb-item text-muted active" aria-current="page">
-                Cadastrar
+                Funcionário
               </li>
             </ol>
           </nav>
