@@ -16,7 +16,6 @@ class Expense extends Model
   {
     return $allExpenses = DB::table('expenses')
     ->join('category_expenses', 'expenses.category_id', '=', 'category_expenses.id')
-    ->select('expenses.*', 'category_expenses.name')
-    ->get();
+    ->select('expenses.*', 'category_expenses.name')->get();
   }
 }

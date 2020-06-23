@@ -18,7 +18,6 @@ class ExpenseController extends Controller
     return view('expenses', ['allCategories' => $allCategories]);
   }
 
-
   public function listCategories()
   {
     $categoryExpenses = new CategoryExpense();
@@ -34,7 +33,6 @@ class ExpenseController extends Controller
 
     return view('expenses-list', ['allExpenses' => $allExpenses]);
   }
-
 
   public function create(Request $request)
   {
