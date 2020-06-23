@@ -15,6 +15,27 @@ class UserController extends Controller
     return view('user-create');
   }
 
+  public function editForm(User $user)
+  {
+    return view('user-edit', ['user' => $user]);
+  }
+
+  public function edit(User $user, Request $request)
+  {
+    $user->name = $request->name;
+    $user->cpf = $request->cpf;
+    $user->phone = $request->phone;
+    $user->office = $request->office;
+
+    if (filter_var($request->email, FILTER_VALIDATE_EMAIL)) $user->email = $request->email;
+
+    if (!empty($request->password)) $user->password = Hash::make($request->password);
+
+    $user->save();
+
+    return redirect()->route('users.list');
+  }
+
   public function create(Request $request)
   {
     if ($request->password != $request->password_confirmed) return redirect()->route('user.create.form');

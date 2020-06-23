@@ -72,7 +72,7 @@
                 {{ $user->phone }}
               </td>
               <td>
-                Cargo
+                {{ $user->office }}
               </td>
               <td>
                 <a href="{{url("dashboard/usuarios/editar/$user->id")}}">
