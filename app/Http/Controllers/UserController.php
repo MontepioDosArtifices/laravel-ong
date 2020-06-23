@@ -36,6 +36,12 @@ class UserController extends Controller
     return redirect()->route('users.list');
   }
 
+  public function delete(user $user)
+  {
+    $user->delete();
+    return redirect()->route('users.list');
+  }
+
   public function create(Request $request)
   {
     if ($request->password != $request->password_confirmed) return redirect()->route('user.create.form');

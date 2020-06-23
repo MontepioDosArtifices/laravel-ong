@@ -80,9 +80,13 @@
                 </a>
               </td>
               <td>
-                <a href="{{url("dashboard/usuarios/apagar/$user->id")}}">
-                  <i class="ti-trash"></i>
-                </a>
+                <form action="{{route("user.delete", $user->id)}}" method="post">
+                  @csrf
+                  @method('delete')
+                  <button type="submit" style="border: 0; background: none; color: red;">
+                    <i class="ti-trash"></i>
+                  </button>
+                </form>
               </td>
             </tr>
           @endforeach
