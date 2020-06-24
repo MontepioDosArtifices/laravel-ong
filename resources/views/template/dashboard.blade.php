@@ -192,28 +192,28 @@
               </a>
               <ul aria-expanded="false" class="collapse  first-level base-level-line">
                 <li class="sidebar-item">
-                  <a href="{{route('category.expenses.form')}}" class="sidebar-link">
+                  <a href="{{route('category.create')}}" class="sidebar-link">
                     <span class="hide-menu">
                       Cadastrar categoria
                     </span>
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a href="{{route('expenses.category.list')}}" class="sidebar-link">
+                  <a href="{{route('category.index')}}" class="sidebar-link">
                     <span class="hide-menu">
                       Listar categoria
                     </span>
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a href="{{route('expenses.form')}}" class="sidebar-link">
+                  <a href="{{route('expense.create')}}" class="sidebar-link">
                     <span class="hide-menu">
                       Cadastrar despesas
                     </span>
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a href="{{route('expenses.list')}}" class="sidebar-link">
+                  <a href="{{route('expense.index')}}" class="sidebar-link">
                     <span class="hide-menu">
                       Listar despesas
                     </span>

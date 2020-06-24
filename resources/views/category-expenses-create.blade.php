@@ -1,7 +1,7 @@
 @extends('template.dashboard')
 
 @section('title')
-  Editar categoria
+  Cadastrar categoria
 @endsection
 
 @section('content')
@@ -10,7 +10,7 @@
     <div class="row">
       <div class="col-7 align-self-center">
         <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">
-          Editar categoria
+          Cadastrar categoria
         </h4>
         <div class="d-flex align-items-center">
           <nav aria-label="breadcrumb">
@@ -30,12 +30,10 @@
     </div>
   </div>
   <div class="container-fluid">
-    <form action="{{route('category.edit', ['category' => $category->id])}}" method="post">
-      <h1>Categorias</h1>
+    <form action="{{ route('category.store') }}" method="post">
       @csrf
-      @method('PUT')
-      <input type="text" value="{{$category->name}}" name="name" class="form-control" placeholder="Nome da categoria"></br>
-      <input type="submit" class="btn btn-primary form-control" value="Editar">
+      <input type="text" name="name" class="form-control" placeholder="Nome da Categoria" required></br>
+      <input type="submit" class="btn btn-primary form-control" value="Cadastrar">
     </form>
   </div>
 </div>

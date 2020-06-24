@@ -13,14 +13,14 @@ Route::resource('dashboard/usuarios', 'UserController')
   ->names('user')
   ->parameters(['usuarios' => 'user']);
 
-Route::get('/dashboard/despesas/categoria/cadastro', 'CategoryExpenseController@createForm')->name('category.expenses.form');
-Route::post('/dashboard/despesas/categoria/cadastro/enviado', 'CategoryExpenseController@registerCategory')->name('category.expenses.create');
-Route::get('/dashboard/despesas/cadastro', 'ExpenseController@createForm')->name('expenses.form');
-Route::post('/dashboard/despesas/cadastro/enviado', 'ExpenseController@create')->name('expenses.create');
-Route::get('/dashboard/despesas', 'ExpenseController@listExpenses')->name('expenses.list');
-Route::get('/dashboard/despesas/categoria', 'ExpenseController@listCategories')->name('expenses.category.list');
-Route::get('/dashboard/despesas/categoria/editar/{category}', 'CategoryExpenseController@editForm')->name('category.edit.form');
-Route::put('/dashboard/despesas/categoria/editar/{category}/enviado', 'CategoryExpenseController@edit')->name('category.edit');
+Route::resource('dashboard/despesas/categoria', 'CategoryExpenseController')
+  ->names('category')
+  ->parameters(['categoria' => 'category']);
+
+Route::resource('dashboard/despesas', 'ExpenseController')
+  ->names('expense')
+  ->parameters(['despesas' => 'expense']);
+
 
 Route::get('/dashboard/doacoes/', function () { return view('donate-list'); })->name('donate.list');
 
