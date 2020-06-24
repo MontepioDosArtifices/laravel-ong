@@ -42,38 +42,42 @@
               </tr>
             </thead>
             <tbody>
-                @foreach($allExpenses as $expense)
-                  <tr>
-                    <td>
-                      {{ $expense->name }}
-                    </td>
-                    <td>
-                      {{ $expense->value }}
-                    </td>
-                    <td>
-                      {{ $expense->description }}
-                    </td>
-                    <td>
-                      {{ $expense->payment_date }}
-                    </td>
-                    <td>
-                      {{ $expense->created_at }}
-                    </td>
-                    <td>
-                      {{ $expense->updated_at }}
-                    </td>
-                    <td>
-                      <a href="{{url("dashboard/despesas/editar/$expense->id")}}">
-                        <i class="ti-pencil"></i>
-                      </a>
-                    </td>
-                    <td>
-                      <a href="{{url("dashboard/despesas/apagar/$expense->id")}}">
+              @foreach($allExpenses as $expense)
+                <tr>
+                  <td>
+                    {{ $expense->name }}
+                  </td>
+                  <td>
+                    {{ $expense->value }}
+                  </td>
+                  <td>
+                    {{ $expense->description }}
+                  </td>
+                  <td>
+                    {{ date('d/m/Y', strtotime($expense->payment_date))}}
+                  </td>
+                  <td>
+                    {{ date('d/m/Y H:i', strtotime($expense->created_at))}}
+                  </td>
+                  <td>
+                    {{ date('d/m/Y H:i', strtotime($expense->created_at))}}
+                  </td>
+                  <td>
+                    <a href="{{route('expense.edit', ['expense' => $expense->id])}}">
+                      <i class="ti-pencil"></i>
+                    </a>
+                  </td>
+                  <td>
+                    <form action="{{route("expense.destroy",['expense' => $expense->id])}}" method="post">
+                      @csrf
+                      @method('delete')
+                      <button type="submit" style="border: 0; background: none; color: red;">
                         <i class="ti-trash"></i>
-                      </a>
-                    </td>
-                  </tr>
-                @endforeach
+                      </button>
+                    </form>
+                  </td>
+                </tr>
+              @endforeach
             </div>
           </div>
         </div>

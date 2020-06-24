@@ -30,7 +30,7 @@
           </div>
         </div>
         <div class="container-fluid">
-          <form action="{{route('expenses.create')}}" method="post">
+          <form action="{{route('expense.store')}}" method="post">
             <h1>Despesas</h1>
             @csrf
             <select name="category_id" class="form-control">
