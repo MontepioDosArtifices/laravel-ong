@@ -26,6 +26,10 @@ Route::group(['middleware' => 'usersession'], function () {
     ->names('user')
     ->parameters(['usuarios' => 'user']);
 
+  Route::resource('dashboard/postagem', 'PostController')
+    ->names('post')
+    ->parameters(['postagem' => 'post']);
+
   Route::get('/dashboard/doacoes/', function () { return view('donate-list'); })->name('donate.list');
 
   Route::get('/dashboard/calendario/', function () { return view('calendar'); })->name('calendar');
