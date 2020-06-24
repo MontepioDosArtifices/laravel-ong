@@ -41,12 +41,21 @@ class PostController extends Controller
 
   public function edit(Post $post)
   {
-    //
+    return view('post-edit', ['post' => $post]);
   }
 
   public function update(Request $request, Post $post)
   {
-    //
+    $post->title = $request->title;
+    $post->body = $request->body;
+    $post->slug = Str::slug($request->slug);
+
+    if (!empty($request->image))
+      $post->image = $request->image;
+
+    $post->save();
+
+    return redirect()->route('post.index');
   }
 
   public function destroy(Post $post)
