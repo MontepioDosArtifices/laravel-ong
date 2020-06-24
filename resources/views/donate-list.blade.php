@@ -89,110 +89,49 @@
                 <thead>
                   <tr>
                     <th>Estado</th>
+                    <th>Valor</th>
                     <th>Causa</th>
                     <th>ID</th>
                     <th>Nome</th>
                     <th>Modo</th>
                     <th>Data</th>
-                    <th>Valor</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>
-                      <span class="badge badge-light-warning">
-                        Confirmado
-                      </span>
-                    </td>
-                    <td>
-                      <a href="javascript:void(0)" class="font-weight-medium link">
-                        Salvador sem fome
-                      </a>
-                    </td>
-                    <td>
-                      <a href="javascript:void(0)" class="font-bold link">
-                        276377
-                      </a>
-                    </td>
-                    <td>Guilherme Caires</td>
-                    <td>Cartão</td>
-                    <td>2018/05/01</td>
-                    <td>200</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span class="badge badge-light-danger">
-                        Confirmado
-                      </span>
-                    </td>
-                    <td>
-                      <a href="javascript:void(0)" class="font-weight-medium link">
-                        Salvador sem sede
-                      </a>
-                    </td>
-                    <td>
-                      <a href="javascript:void(0)" class="font-bold link">
-                        1234251
-                      </a>
-                    </td>
-                    <td>Jefferson Eloy</td>
-                    <td>Cartão</td>
-                    <td>2018/05/11</td>
-                    <td>100</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span class="badge badge-light-success">
-                        Pendente
-                      </span>
-                    </td>
-                    <td>
-                      <a href="javascript:void(0)" class="font-weight-medium link">
-                        Salvador sem fome
-                      </a>
-                    </td>
-                    <td>
-                      <a href="javascript:void(0)" class="font-bold link">
-                        1020345
-                      </a>
-                    </td>
-                    <td>Júlio Cézar</td>
-                    <td>Boleto</td>
-                    <td>2018/04/01</td>
-                    <td>35</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span class="badge badge-light-warning">
-                        Retornou
-                      </span>
-                    </td>
-                    <td>
-                      <a href="javascript:void(0)" class="font-weight-medium link">
-                        Salvador sem frio
-                      </a>
-                    </td>
-                    <td>
-                      <a href="javascript:void(0)" class="font-bold link">
-                        7810203
-                      </a>
-                    </td>
-                    <td>Danilo Vieira</td>
-                    <td>Cartão</td>
-                    <td>2018/01/01</td>
-                    <td>170</td>
-                  </tr>
+                  @foreach($allTransactions as $transaction)
+                    <tr>
+                      <td>
+                        <span class="badge badge-light-warning">
+                          {{$transaction['status'] === 'paid' ? 'Pago' : ''}}
+                        </span>
+                      </td>
+                      <td>{{$transaction['amount']/100}}</td>
+                      <td>
+                        <a href="javascript:void(0)" class="font-weight-medium link">
+                          Salvador sem fome
+                        </a>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0)" class="font-bold link">
+                          {{$transaction['id']}}
+                        </a>
+                      </td>
+                      <td>{{$transaction['customer']['name']}}</td>
+                      <td>{{$transaction['payment_method'] === 'credit_card' ? 'Cartão de Crédito' : ''}}</td>
+                      <td>{{ $transaction['date_created']}}</td>
+                    </tr>
+                  @endforeach
                 </tbody>
                 <tfoot>
-                    <tr>
-                        <th>Estado</th>
-                        <th>Causa</th>
-                        <th>ID</th>
-                        <th>Nome</th>
-                        <th>Modo</th>
-                        <th>Data</th>
-                        <th>Valor</th>
-                    </tr>
+                  <tr>
+                    <th>Estado</th>
+                    <th>Valor</th>
+                    <th>Causa</th>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Modo</th>
+                    <th>Data</th>
+                  </tr>
                 </tfoot>
               </table>
               <ul class="pagination float-right">

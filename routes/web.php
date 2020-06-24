@@ -28,7 +28,7 @@ Route::get('/dashboard/despesas/categoria', 'ExpenseController@listCategories')-
 Route::get('/dashboard/despesas/categoria/editar/{category}', 'CategoryExpenseController@editForm')->name('category.edit.form');
 Route::put('/dashboard/despesas/categoria/editar/{category}/enviado', 'CategoryExpenseController@edit')->name('category.edit');
 
-Route::get('/dashboard/doacoes/', function () { return view('donate-list'); })->name('donate.list');
+Route::get('/dashboard/doacoes/', 'DonateController@index')->name('donate.list');
 
 Route::get('/dashboard/calendario/', function () { return view('calendar'); })->name('calendar');
 

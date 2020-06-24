@@ -16,11 +16,6 @@ class PagarmeRequestService extends BaseRequestService
     return $this->get('customers');
   }
 
-  public function getCustomer($id)
-  {
-    return $this->get(sprintf('%s%s', 'customers/', $id));
-  }
-
   public function createTransaction(Request $request)
   {
     $external_id = rand(1, 10000);
@@ -51,5 +46,10 @@ class PagarmeRequestService extends BaseRequestService
     $this->post('transactions', $data);
 
     return redirect()->route('donation.form');
+  }
+
+  public function getTransactions()
+  {
+    return $allTransactions = $this->get('transactions');
   }
 }
