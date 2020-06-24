@@ -36,7 +36,7 @@
   <div class="tr-menu">
     <nav id="tr_navbar" class="navbar fixed-top navbar-expand-lg slideDown">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="{{route('home')}}">
           <img src="./images/logo.png" style="width: 100px;" alt="MontePio dos Artífices">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +45,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item tr-dropdown current">
-              <a href="#">Início</a>
+              <a href="{{route('home')}}">Início</a>
               <ul class="tr-dropdown-menu">
                 <li class="active"><a href="#">Home V-1</a></li>
                 <li><a href="#">Home V-2</a></li>
@@ -57,7 +57,7 @@
             <li><a href="#about">Sobre</a></li>
             <li><a href="#blog">Notícias</a></li>
             <li><a href="#contact">Contato</a></li>
-            <li><a href="#">Doar</a></li>
+            <li><a href="{{route('donation.form')}}">Doar</a></li>
           </ul>
         </div>
       </div><!-- /.container -->
