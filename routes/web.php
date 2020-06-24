@@ -4,6 +4,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () { return view('home'); })->name('home');
 
+Route::get('/doar', 'Services\PagarmeRequestService@createForm')->name('donation.form');
+Route::post('/doar/enviado', 'Services\PagarmeRequestService@createTransaction')->name('donation.send');
+
+Route::get('/dashboard', function () { return view('dashboard'); })->name('dashboard');
+
 Route::get('/dashboard/login/', function () { return view('user-login'); })->name('user.login');
 Route::post('/dashboard/login/enviado', 'LoginController@index')->name('user.login.send');
 
