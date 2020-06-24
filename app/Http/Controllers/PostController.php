@@ -11,7 +11,8 @@ class PostController extends Controller
 
   public function index()
   {
-
+    $posts = Post::all();
+    return view('post-list', ['posts' => $posts]);
   }
 
   public function create()
