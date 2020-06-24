@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link id="preset" rel="stylesheet" href="css/preset1.css">
   <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="{{url('css/donation.css')}}">
 
   <link rel="icon" href="images/favicon/favicon.png" sizes="16x16">
   <link rel="icon" href="images/favicon/favicon-32.png" sizes="32x32">
