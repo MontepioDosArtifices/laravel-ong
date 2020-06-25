@@ -7,28 +7,48 @@ use Illuminate\Http\Request;
 
 class CategoryExpenseController extends Controller
 {
-  public function registerCategory(Request $request){
-    $category = new CategoryExpense;
+  public function index()
+  {
+    $allCategories = CategoryExpense::all();
+    return view('category-list', ['allCategories'=> $allCategories]);
+  }
+
+  public function create()
+  {
+    return view('category-expenses-create');
+  }
+
+  public function store(Request $request)
+  {
+    $category = new CategoryExpense();
     $category->name = $request->name;
     $category->save();
 
-    return redirect()->route('category.expenses.form');
+    return redirect()->route('category.index');
   }
 
-  public function createForm(){
-    return view('category-expenses');
+  public function show(CategoryExpense $category)
+  {
+    //
   }
 
-  public function edit(CategoryExpense $category, Request $request)
+  public function edit(CategoryExpense $category)
+  {
+    return view('category-edit', ['category' => $category]);
+  }
+
+  public function update(Request $request, CategoryExpense $category)
   {
     $category->name = $request->name;
     $category->save();
 
-    return redirect()->route('expenses.category.list');
+    return redirect()->route('category.index');
   }
 
-  public function editForm(CategoryExpense $category)
+  public function destroy(CategoryExpense $category)
   {
-    return view('edit-category-list', ['category' => $category]);
+    $category->delete();
+    return redirect()->route('category.index');
   }
+
 }

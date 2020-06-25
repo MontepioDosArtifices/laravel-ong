@@ -192,28 +192,28 @@
               </a>
               <ul aria-expanded="false" class="collapse  first-level base-level-line">
                 <li class="sidebar-item">
-                  <a href="{{route('category.expenses.form')}}" class="sidebar-link">
+                  <a href="{{route('category.create')}}" class="sidebar-link">
                     <span class="hide-menu">
                       Cadastrar categoria
                     </span>
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a href="{{route('expenses.category.list')}}" class="sidebar-link">
+                  <a href="{{route('category.index')}}" class="sidebar-link">
                     <span class="hide-menu">
                       Listar categoria
                     </span>
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a href="{{route('expenses.form')}}" class="sidebar-link">
+                  <a href="{{route('expense.create')}}" class="sidebar-link">
                     <span class="hide-menu">
                       Cadastrar despesas
                     </span>
                   </a>
                 </li>
                 <li class="sidebar-item">
-                  <a href="{{route('expenses.list')}}" class="sidebar-link">
+                  <a href="{{route('expense.index')}}" class="sidebar-link">
                     <span class="hide-menu">
                       Listar despesas
                     </span>
@@ -251,16 +251,28 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a
-                href="{{url('/dasboard/noticias')}}"
-                class="sidebar-link sidebar-link"
-                aria-expanded="false"
-              >
+              <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
                 <i data-feather="sidebar" class="feather-icon"></i>
                 <span class="hide-menu">
-                  Notícias
+                  Postagem
                 </span>
               </a>
+              <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                <li class="sidebar-item">
+                  <a href="{{route('post.create')}}" class="sidebar-link">
+                    <span class="hide-menu">
+                      Cadastrar postagem
+                    </span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="{{route('post.index')}}" class="sidebar-link">
+                    <span class="hide-menu">
+                      Listar postagens
+                    </span>
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>

@@ -45,20 +45,24 @@
                     {{ $category->name }}
                   </td>
                   <td>
-                    {{ $category->created_at}}
+                    {{ date('d/m/Y H:i', strtotime($category->created_at))}}
                   </td>
                   <td>
-                    {{ $category->updated_at}}
+                    {{ date('d/m/Y H:i', strtotime($category->updated_at))}}
                   </td>
                   <td>
-                    <a href="{{url("dashboard/despesas/categoria/editar/$category->id")}}">
+                    <a href="{{route('category.edit', ['category' => $category->id])}}">
                       <i class="ti-pencil"></i>
                     </a>
                   </td>
                   <td>
-                    <a href="{{url("dashboard/despesas/categorias/apagar/$category->id")}}">
-                      <i class="ti-trash"></i>
-                    </a>
+                    <form action="{{route("category.destroy", $category->id)}}" method="post">
+                      @csrf
+                      @method('delete')
+                      <button type="submit" style="border: 0; background: none; color: red;">
+                        <i class="ti-trash"></i>
+                      </button>
+                    </form>
                   </td>
                 </tr>
               @endforeach
