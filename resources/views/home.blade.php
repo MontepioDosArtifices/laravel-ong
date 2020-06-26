@@ -224,53 +224,6 @@
     </div><!-- /.section-content -->
   </div><!-- /.tr-about-section -->
 
-  <div class="tr-fun-facts">
-    <div class="section-content bg-image text-center tr-parallax section-before" style="background-image: none;">
-      <div class="container">
-        <div class="fun-facts text-left clearfix">
-          <ul class="global-list">
-            <li class="fun-fact">
-              <div class="fun-fact-icon">
-                <img src="images/others/icon-fun1.png" alt="Image" class="img-fluid">
-              </div>
-              <div class="fun-fact-info">
-                <p>Total Arrecadado</p>
-                <p class="counter">R$ <span>30.750</span></p>
-              </div>
-            </li>
-            <li class="fun-fact">
-              <div class="fun-fact-icon">
-                <img src="images/others/icon-fun2.png" alt="Image" class="img-fluid">
-              </div>
-              <div class="fun-fact-info">
-                <p>Total de voluntários</p>
-                <p class="counter"><span>900</span>+</p>
-              </div>
-            </li>
-            <li class="fun-fact">
-              <div class="fun-fact-icon">
-                <img src="images/others/icon-fun3.png" alt="Image" class="img-fluid">
-              </div>
-              <div class="fun-fact-info">
-                <p>Pessoas ajudadas</p>
-                <p class="counter"><span>21.000</span>+</p>
-              </div>
-            </li>
-            <li class="fun-fact">
-              <div class="fun-fact-icon">
-                <img src="images/others/icon-fun4.png" alt="Image" class="img-fluid">
-              </div>
-              <div class="fun-fact-info">
-                <p>Países de atuação</p>
-                <p class="counter"><span>30</span>+</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div><!-- /.container -->
-    </div>
-  </div><!-- /.tr-fun-facts -->
-
   <div class="tr-faq-section">
     <div class="section-content tr-bg-white">
       <div class="container">
