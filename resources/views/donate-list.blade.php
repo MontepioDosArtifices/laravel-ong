@@ -39,7 +39,7 @@
                 <div class="card card-hover">
                   <div class="p-2 bg-primary text-center">
                     <h1 class="font-light text-white">
-                      1.600
+                      {{count($allTransactions)}}
                     </h1>
                     <h6 class="text-white">
                       Total de doações
@@ -95,6 +95,7 @@
                     <th>Nome</th>
                     <th>Modo</th>
                     <th>Data</th>
+                    <th>Horário</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -105,7 +106,9 @@
                           {{$transaction['status'] === 'paid' ? 'Pago' : ''}}
                         </span>
                       </td>
-                      <td>{{$transaction['amount']/100}}</td>
+                      <td>
+                        {{'R$ '.number_format($transaction['amount']/100, 2)}}
+                      </td>
                       <td>
                         <a href="javascript:void(0)" class="font-weight-medium link">
                           Salvador sem fome
@@ -118,7 +121,12 @@
                       </td>
                       <td>{{$transaction['customer']['name']}}</td>
                       <td>{{$transaction['payment_method'] === 'credit_card' ? 'Cartão de Crédito' : ''}}</td>
-                      <td>{{ $transaction['date_created']}}</td>
+                      <td>
+                        {{ date('d/m/Y', strtotime($transaction['date_created']))}}
+                      </td>
+                      <td>
+                        {{date('H:i:s', strtotime($transaction['date_created']))}}
+                      </td>
                     </tr>
                   @endforeach
                 </tbody>
@@ -131,6 +139,7 @@
                     <th>Nome</th>
                     <th>Modo</th>
                     <th>Data</th>
+                    <th>Horário</th>
                   </tr>
                 </tfoot>
               </table>
