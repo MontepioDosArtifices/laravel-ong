@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+ {{date_default_timezone_set("America/Sao_Paulo")}}
 <div class="page-wrapper">
   <div class="page-breadcrumb">
     <div class="row">
@@ -107,7 +108,7 @@
                         </span>
                       </td>
                       <td>
-                        {{'R$ '.number_format($transaction['amount']/100, 2)}}
+                        {{'R$ '.number_format($transaction['amount']/100, 2, ',', ' ')}}
                       </td>
                       <td>
                         <a href="javascript:void(0)" class="font-weight-medium link">
