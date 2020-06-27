@@ -22,13 +22,19 @@ class PostController extends Controller
 
   public function store(Request $request)
   {
-    if (empty($request->title) || empty($request->body))
+    if (empty($request->title) || empty($request->body) || empty($request->image))
       return redirect()->route('post.create');
+
+    $imageUpload = new ImageUploadController();
+    $upload = $imageUpload->store($request->file('image'), 'posts');
+
+    if(!$upload) return redirect()->back();
 
     $post = new Post();
     $post->title = $request->title;
     $post->body  = $request->body;
     $post->slug = Str::slug($request->title);
+    $post->image = $upload;
     $post->save();
 
     return redirect()->route('post.index');

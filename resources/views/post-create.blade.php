@@ -30,7 +30,7 @@
     </div>
   </div>
   <div class="container-fluid">
-    <form action="{{route('post.store')}}" method="post">
+    <form action="{{route('post.store')}}" method="post" enctype="multipart/form-data">
       <h1>Dados da postagem</h1>
       @csrf
       <input type="text" name="title" class="form-control" placeholder="Título" maxlength="100" required><br>
