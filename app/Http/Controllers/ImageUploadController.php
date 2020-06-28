@@ -26,7 +26,7 @@ class ImageUploadController extends Controller
 
       if (!$upload) return false;
 
-      return "$dir/$fileName";
+      return "storage/$dir/$fileName";
     }
   }
 }

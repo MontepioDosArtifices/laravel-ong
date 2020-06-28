@@ -31,6 +31,10 @@ Route::group(['middleware' => 'usersession'], function () {
     ->names('post')
     ->parameters(['postagem' => 'post']);
 
+  Route::resource('dashboard/cursos', 'CoursesController')
+    ->names('course')
+    ->parameters(['cursos' => 'course']);
+
   Route::get('/dashboard/doacoes/', 'DonateController@index')->name('donate.list');
 
 });

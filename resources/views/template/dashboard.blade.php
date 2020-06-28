@@ -239,16 +239,28 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a
-                href="{{url('/dashboard/cursos')}}"
-                class="sidebar-link sidebar"
-                aria-expanded="false"
-              >
-                <i data-feather="book" class="feather-icon"></i>
+              <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
+                <i data-feather="sidebar" class="feather-icon"></i>
                 <span class="hide-menu">
-                  Cursos
+                  Curso
                 </span>
               </a>
+              <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                <li class="sidebar-item">
+                  <a href="{{route('course.create')}}" class="sidebar-link">
+                    <span class="hide-menu">
+                      Cadastrar curso
+                    </span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="{{route('course.index')}}" class="sidebar-link">
+                    <span class="hide-menu">
+                      Listar cursos
+                    </span>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
