@@ -227,7 +227,7 @@
             </li>
             <li class="sidebar-item">
               <a
-                href="{{route('home')}}"
+                href="{{route('site')}}"
                 class="sidebar-link sidebar-link"
                 target="_blank"
                 aria-expanded="false"

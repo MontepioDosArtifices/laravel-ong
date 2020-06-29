@@ -36,7 +36,7 @@
   <div class="tr-menu">
     <nav id="tr_navbar" class="navbar fixed-top navbar-expand-lg slideDown">
       <div class="container">
-        <a class="navbar-brand" href="{{route('home')}}">
+        <a class="navbar-brand" href="{{route('site')}}">
           <img src="./images/logo.png" style="width: 150px;" alt="MontePio dos Artífices">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
-            <li><a href="{{route('home')}}">Início</a></li>
+            <li><a href="{{route('site')}}">Início</a></li>
             <li><a href="#service">Serviços</a></li>
             <li><a href="#causes">Causas</a></li>
             <li><a href="#about">Sobre</a></li>
