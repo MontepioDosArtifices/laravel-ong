@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
- {{date_default_timezone_set("America/Sao_Paulo")}}
+{{date_default_timezone_set("America/Sao_Paulo")}}
 <div class="page-wrapper">
   <div class="page-breadcrumb">
     <div class="row">
@@ -51,11 +51,17 @@
               <div class="col-md-6 col-lg-3 col-xlg-3">
                 <div class="card card-hover">
                   <div class="p-2 bg-success text-center">
-                    <h1 class="font-light text-white">
-                      1.000
-                    </h1>
+                      <?php
+                      $transactionsPaids = array_filter($allTransactions, function ($item) {
+                        return $item['status'] === 'paid';
+                      })
+                      ?>
+                        <h1 class="font-light text-white">
+                          {{count($transactionsPaids)}}
+                        </h1>
+
                     <h6 class="text-white">
-                      Confirmadas
+                      Aprovadas
                     </h6>
                   </div>
                 </div>
@@ -63,8 +69,13 @@
               <div class="col-md-6 col-lg-3 col-xlg-3">
                 <div class="card card-hover">
                   <div class="p-2 bg-cyan text-center">
+                    <?php
+                    $trasactionsPending = array_filter($allTransactions, function ($item) {
+                      return $item['status'] === 'pending_review';
+                    })
+                    ?>
                     <h1 class="font-light text-white">
-                      500
+                      {{count($trasactionsPending)}}
                     </h1>
                     <h6 class="text-white">
                       Pendentes
@@ -75,11 +86,16 @@
               <div class="col-md-6 col-lg-3 col-xlg-3">
                 <div class="card card-hover">
                   <div class="p-2 bg-danger text-center">
+                    <?php
+                       $transactionsRefused = array_filter($allTransactions, function ($item) {
+                        return $item['status'] === 'refused';
+                      })
+                      ?>
                     <h1 class="font-light text-white">
-                      100
+                      {{count($transactionsRefused)}}
                     </h1>
                     <h6 class="text-white">
-                      Retornaram
+                      Recusadas
                     </h6>
                   </div>
                 </div>
@@ -104,7 +120,16 @@
                     <tr>
                       <td>
                         <span class="badge badge-light-warning">
-                          {{$transaction['status'] === 'paid' ? 'Pago' : ''}}
+                          @if ($transaction['status'] === 'paid' )
+                            {{'Aprovada'}}
+
+                            @elseif ($transaction['status'] === 'refused')
+                              {{'Recusada'}}
+
+                            @else
+                              {{'Pendente'}}
+
+                          @endif
                         </span>
                       </td>
                       <td>
