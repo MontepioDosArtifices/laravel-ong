@@ -281,11 +281,11 @@
               <div class="tr-post">
                 <div class="entry-header">
                   <div class="entry-thumbnail">
-                    <a href="#">
+                    <a href="{{ route('site.post.show', $post->slug) }}">
                       <img src="{{ $post->image }}" alt="Imagem" class="img-fluid">
                     </a>
                   </div>
-                  <h2 class="entry-title"><a href="#">{{ $post->title }}</a></h2>
+                  <h2 class="entry-title"><a href="{{ route('site.post.show', $post->slug) }}">{{ $post->title }}</a></h2>
                   <div class="entry-footer clearfix">
                     <ul class="tr-list">
                       <li class="float-left">
@@ -302,6 +302,7 @@
             </div>
           @endforeach
         </div><!-- /.row -->
+        <a href="{{ route('site.post') }}">Ver mais</a>
       </div><!-- /.container -->
     </div><!-- /.blog-content -->
   </div><!-- /.tr-blog -->

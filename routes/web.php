@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'SiteController@index')->name('site');
 
+Route::get('postagem', 'SitePostController@index')->name('site.post');
+Route::get('postagem/{slug}', 'SitePostController@show')->name('site.post.show');
+
 Route::get('/doar', 'Services\PagarmeRequestService@createForm')->name('donation.form');
 Route::post('/doar/enviado', 'Services\PagarmeRequestService@createTransaction')->name('donation.send');
 
