@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () { return view('home'); })->name('home');
+Route::get('/', 'SiteController@index')->name('site');
 
 Route::get('/doar', 'Services\PagarmeRequestService@createForm')->name('donation.form');
 Route::post('/doar/enviado', 'Services\PagarmeRequestService@createTransaction')->name('donation.send');

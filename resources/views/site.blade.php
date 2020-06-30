@@ -276,79 +276,31 @@
           </div>
         </div><!-- /.section-header -->
         <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <div class="tr-post">
-              <div class="entry-header">
-                <div class="entry-thumbnail">
-                  <a href="#">
-                    <img src="images/blog/1.jpg" alt="Image" class="img-fluid">
-                  </a>
-                </div>
-                <h2 class="entry-title"><a href="#">Título da notícia</a></h2>
-                <div class="entry-footer clearfix">
-                  <ul class="tr-list">
-                    <li class="float-left">
-                      <span class="tr-author">
-                        <img src="images/others/author1.png" class="img-fluid" alt="Image">
-                      </span>
-                      <a href="#"><span>Por</span> Admin</a>
-                    </li>
-                    <li class="float-right tr-date">29 Mar 2019</li>
-                  </ul>
-                </div>
-              </div><!-- /.entry-header -->
-            </div><!-- /.tr-post -->
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="tr-post">
-              <div class="entry-header">
-                <div class="entry-thumbnail">
-                  <a href="#">
-                    <img src="images/blog/2.jpg" alt="Image" class="img-fluid">
-                  </a>
-                </div>
-                <h2 class="entry-title">
-                  <a href="#">Título da notícia</a>
-                </h2>
-                <div class="entry-footer clearfix">
-                  <ul class="tr-list">
-                    <li class="float-left">
-                      <span class="tr-author">
-                        <img src="images/others/author1.png" class="img-fluid" alt="Image">
-                      </span>
-                      <a href="#"><span>Por</span> Admin</a>
-                    </li>
-                    <li class="float-right tr-date">29 Mar 2019</li>
-                  </ul>
-                </div>
-              </div><!-- /.entry-header -->
-            </div><!-- /.tr-post -->
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="tr-post">
-              <div class="entry-header">
-                <div class="entry-thumbnail">
-                  <a href="#">
-                    <img src="images/blog/3.jpg" alt="Image" class="img-fluid">
-                  </a>
-                </div>
-                <h2 class="entry-title">
-                  <a href="#">Título da notícia</a>
-                </h2>
-                <div class="entry-footer clearfix">
-                  <ul class="tr-list">
-                    <li class="float-left">
-                      <span class="tr-author">
-                        <img src="images/others/author1.png" class="img-fluid" alt="Image">
-                      </span>
-                      <a href="#"><span>Por</span> Admin</a>
-                    </li>
-                    <li class="float-right tr-date">29 Mar 2019</li>
-                  </ul>
-                </div>
-              </div><!-- /.entry-header -->
-            </div><!-- /.tr-post -->
-          </div>
+          @foreach ($posts as $post)
+            <div class="col-md-6 col-lg-4">
+              <div class="tr-post">
+                <div class="entry-header">
+                  <div class="entry-thumbnail">
+                    <a href="#">
+                      <img src="{{ $post->image }}" alt="Imagem" class="img-fluid">
+                    </a>
+                  </div>
+                  <h2 class="entry-title"><a href="#">{{ $post->title }}</a></h2>
+                  <div class="entry-footer clearfix">
+                    <ul class="tr-list">
+                      <li class="float-left">
+                        <span class="tr-author">
+                          <img src="images/others/author1.png" class="img-fluid" alt="Image">
+                        </span>
+                        <a href="#"><span>Por</span> Admin</a>
+                      </li>
+                      <li class="float-right tr-date">{{ date('d/m/Y', strtotime($post->created_at)) }}</li>
+                    </ul>
+                  </div>
+                </div><!-- /.entry-header -->
+              </div><!-- /.tr-post -->
+            </div>
+          @endforeach
         </div><!-- /.row -->
       </div><!-- /.container -->
     </div><!-- /.blog-content -->
