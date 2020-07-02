@@ -312,5 +312,6 @@
   <script src="{{url('/assets/libs/moment/min/moment.min.js')}}"></script>
   <script src="{{url('/assets/libs/fullcalendar/dist/fullcalendar.min.js')}}"></script>
   <script src="{{url('/dist/js/pages/calendar/cal-init.js')}}"></script>
+  <script src="{{url('/js/search.js')}}"></script>
 </body>
 </html>
