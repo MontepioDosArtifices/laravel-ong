@@ -94,7 +94,7 @@
                   </span>
               </a>
               <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
-                <a class="dropdown-item" href="javascript:void(0)">
+                <a class="dropdown-item" href="{{ route('user.profile', ['user' => session()->get('id')]) }}">
                   <i data-feather="user"
                     class="svg-icon mr-2 ml-1">
                   </i>

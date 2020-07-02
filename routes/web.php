@@ -16,6 +16,8 @@ Route::get('/dashboard/calendario', function () { return view('calendar'); })->n
 Route::get('/dashboard/login/', function () { return view('user-login'); })->name('user.login');
 Route::post('/dashboard/login/enviado', 'LoginController@index')->name('user.login.send');
 
+Route::get('/dashboard/perfil/{user}', 'ProfileController@show')->name('user.profile');
+
 Route::group(['middleware' => 'usersession'], function () {
 
   Route::resource('dashboard/despesas/categoria', 'CategoryExpenseController')

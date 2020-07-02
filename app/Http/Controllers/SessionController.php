@@ -10,7 +10,7 @@ class SessionController extends Controller
 {
   public function create($user)
   {
-    return Session::put('name', $user->name);
+    return Session::put(['name' => $user->name, 'id' => $user->id]);
   }
 
   public function destroy()
