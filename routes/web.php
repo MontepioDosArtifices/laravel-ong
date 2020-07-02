@@ -38,6 +38,10 @@ Route::group(['middleware' => 'usersession'], function () {
     ->names('course')
     ->parameters(['cursos' => 'course']);
 
+    Route::resource('dashboard/alunos', 'StudentController')
+      ->names('student')
+      ->parameters(['alunos' => 'student']);
+
   Route::get('/dashboard/doacoes/', 'DonateController@index')->name('donate.list');
 
 });
