@@ -22,11 +22,11 @@ class PagarmeRequestService extends BaseRequestService
 
     $data = [
       'amount' => $request->value,
-      'payment_method' => $request->method_payment,
-      'card_holder_name' => $request->name_card,
-      'card_cvv' => $request->cvv,
-      'card_number' => $request->number_card,
-      'card_expiration_date' => $request->expiration_date,
+      'payment_method' => $request->payment_method,
+      'card_holder_name' => $request->card_holder_name,
+      'card_cvv' => $request->card_cvv,
+      'card_number' => $request->card_number,
+      'card_expiration_date' => $request->card_expiration_date,
       'customer' => [
         'external_id' => (string) $external_id,
         'name' => $request->name,
