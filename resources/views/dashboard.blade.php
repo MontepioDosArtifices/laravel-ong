@@ -35,13 +35,10 @@
           <div class="d-flex d-lg-flex d-md-block align-items-center">
             <div>
               <div class="d-inline-flex align-items-center">
-                <h2 class="text-dark mb-1 font-weight-medium">236</h2>
-                  <span class="badge bg-primary font-12 text-white font-weight-medium badge-pill ml-2 d-lg-block d-md-none">
-                    +18%
-                  </span>
+              <h2 class="text-dark mb-1 font-weight-medium">{{count($allCustomers)}}</h2>
               </div>
               <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">
-                Novos doadores
+                Total de doadores
               </h6>
             </div>
             <div class="ml-auto mt-md-3 mt-lg-0">
@@ -84,10 +81,10 @@
           <div class="d-flex d-lg-flex d-md-block align-items-center">
             <div>
               <h2 class="text-dark mb-1 w-100 text-truncate font-weight-medium">
-                <sup class="set-doller">
-                  R$
-                </sup>
-                56.098
+                @foreach ($allTransactions as $transaction)
+                @endforeach
+                <?php $totalValue = $transaction['amount']+$transaction['amount']?>
+                <p>{{'R$'.number_format($totalValue/100, 2, ',', ' ')}}</p>
               </h2>
               <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">
                 Total doado
