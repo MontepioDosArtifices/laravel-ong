@@ -295,6 +295,8 @@
   </div>
 
   <script src="{{url('/assets/libs/jquery/dist/jquery.min.js')}}"></script>
+  <script src="{{url('/assets/extra-libs/taskboard/js/jquery.ui.touch-punch-improved.js')}}"></script>
+  <script src="{{url('/assets/extra-libs/taskboard/js/jquery-ui.min.js')}}"></script>
   <script src="{{url('/assets/libs/popper.js/dist/umd/popper.min.js')}}"></script>
   <script src="{{url('/assets/libs/bootstrap/dist/js/bootstrap.min.js')}}"></script>
   <script src="{{url('/dist/js/app-style-switcher.js')}}"></script>
