@@ -240,7 +240,7 @@
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
-                <i data-feather="sidebar" class="feather-icon"></i>
+                <i data-feather="book" class="feather-icon"></i>
                 <span class="hide-menu">
                   Curso
                 </span>
