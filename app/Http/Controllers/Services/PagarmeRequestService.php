@@ -13,7 +13,7 @@ class PagarmeRequestService extends BaseRequestService
 
   public function getCustomers()
   {
-    return $this->get('customers');
+    return $allCustomers = $this->get('customers');
   }
 
   public function createTransaction(Request $request)
