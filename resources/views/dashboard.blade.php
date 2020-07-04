@@ -81,10 +81,16 @@
           <div class="d-flex d-lg-flex d-md-block align-items-center">
             <div>
               <h2 class="text-dark mb-1 w-100 text-truncate font-weight-medium">
-                @foreach ($allTransactions as $transaction)
-                @endforeach
-                <?php $totalValue = $transaction['amount']+$transaction['amount']?>
-                <p>{{'R$'.number_format($totalValue/100, 2, ',', ' ')}}</p>
+                <sup class="set-doller">
+                   R$
+                </sup>
+                <?php
+                  $value = 0;
+                  for ($i=0; $i <=count($allTransactions)-1 ; $i++) {
+                    $value += $allTransactions[$i]['amount'];
+                  }
+                ?>
+                {{ number_format($value/100, 2, ',', ' ') }}
               </h2>
               <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">
                 Total doado
