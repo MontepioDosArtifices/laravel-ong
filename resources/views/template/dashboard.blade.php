@@ -240,7 +240,7 @@
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
-                <i data-feather="sidebar" class="feather-icon"></i>
+                <i data-feather="book" class="feather-icon"></i>
                 <span class="hide-menu">
                   Curso
                 </span>
@@ -295,6 +295,8 @@
   </div>
 
   <script src="{{url('/assets/libs/jquery/dist/jquery.min.js')}}"></script>
+  <script src="{{url('/assets/extra-libs/taskboard/js/jquery.ui.touch-punch-improved.js')}}"></script>
+  <script src="{{url('/assets/extra-libs/taskboard/js/jquery-ui.min.js')}}"></script>
   <script src="{{url('/assets/libs/popper.js/dist/umd/popper.min.js')}}"></script>
   <script src="{{url('/assets/libs/bootstrap/dist/js/bootstrap.min.js')}}"></script>
   <script src="{{url('/dist/js/app-style-switcher.js')}}"></script>
