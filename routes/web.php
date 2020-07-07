@@ -20,6 +20,10 @@ Route::get('/dashboard/perfil/{user}', 'ProfileController@show')->name('user.pro
 
 Route::group(['middleware' => 'usersession'], function () {
 
+  Route::resource('events', 'EventController')
+    ->names('event')
+    ->parameters(['event' => 'event']);
+
   Route::resource('dashboard/despesas/categoria', 'CategoryExpenseController')
     ->names('category')
     ->parameters(['categoria' => 'category']);
