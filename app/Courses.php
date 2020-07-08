@@ -15,4 +15,9 @@ class Courses extends Model
   {
     return $allCourses = DB::select('select * from courses');
   }
+
+  public function students()
+  {
+    return $this->belongsToMany('App\Student');
+  }
 }

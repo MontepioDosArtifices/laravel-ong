@@ -1,7 +1,7 @@
 @extends('template.dashboard')
 
 @section('title')
-  Cadastrar Curso
+  Editar dados do aluno
 @endsection
 
 @section('content')
@@ -10,7 +10,7 @@
     <div class="row">
       <div class="col-7 align-self-center">
         <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">
-          Cadastrar curso
+          Editar dados do estudante
         </h4>
         <div class="d-flex align-items-center">
           <nav aria-label="breadcrumb">
@@ -21,7 +21,7 @@
                 </a>
               </li>
               <li class="breadcrumb-item text-muted active" aria-current="page">
-                Cursos
+                Alunos
               </li>
             </ol>
           </nav>
@@ -30,16 +30,15 @@
     </div>
   </div>
   <div class="container-fluid">
-    <form action="{{ route('course.store') }}" method="post" enctype="multipart/form-data">
+    <form action="{{route('student.update', ['student' => $student->id])}}" method="post">
+      <h1>Categorias</h1>
       @csrf
-      <input type="text" name="title" class="form-control" placeholder="Titulo do Curso" required>
-      <input type="text" name="limit" class="form-control" placeholder="Limite de pessoas" required>
-      <textarea type="text" name="description" class="form-control" placeholder="Descrição do Curso" required></textarea>
-      <div class="custom-file">
-        <input type="file" name="image" accept="image/png, image/jpeg" id="customFileLang" class="custom-file-input">
-        <label for="customFileLang" data-browse="Buscar" class="custom-file-label">Imagem da postagem</label>
-      </div><br><br></br>
-      <input type="submit" class="btn btn-primary form-control" value="Cadastrar">
+      @method('PUT')
+        <input type="text" value="{{$student->name}}" name="name" class="form-control" placeholder="Nome" autofocus required>
+        <input type="text" value="{{$student->email}}" name="email" class="form-control" placeholder="Email" required>
+        <input type="text" value="{{$student->cpf}}" name="cpf" class="form-control" placeholder="CPF"  maxlength="11" required disabled>
+        <input type="text" value="{{$student->phone}}" name="phone" class="form-control" placeholder="Ex: 75 9 8788-8888" maxlength="13"required></br>
+      <input type="submit" class="btn btn-primary form-control" value="Editar">
     </form>
   </div>
 </div>

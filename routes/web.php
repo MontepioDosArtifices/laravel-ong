@@ -7,6 +7,9 @@ Route::get('/', 'SiteController@index')->name('site');
 Route::get('postagem', 'SitePostController@index')->name('site.post');
 Route::get('postagem/{slug}', 'SitePostController@show')->name('site.post.show');
 
+Route::get('cursos', 'SiteCourseController@index')->name('site.course.post');
+Route::get('curso/{title}', 'SiteCourseController@show')->name('site.course.show');
+
 Route::get('/doar', 'Services\PagarmeRequestService@createForm')->name('donation.form');
 Route::post('/doar/enviado', 'Services\PagarmeRequestService@createTransaction')->name('donation.send');
 
