@@ -15,6 +15,15 @@ class DonateController extends Controller
     return view('donate-list',['allTransactions' => $allTransactions]);
   }
 
+  public function indexCustomers()
+  {
+    $pagarme = new PagarmeRequestService();
+    $allCustomers = $pagarme->getCustomers();
+    $allTransactions = $pagarme->getTransactions();
+
+    return view('dashboard',['allCustomers' => $allCustomers, 'allTransactions' => $allTransactions]);
+  }
+
   public function show($id)
   {
       //
