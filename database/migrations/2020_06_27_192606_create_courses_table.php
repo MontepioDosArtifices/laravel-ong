@@ -14,6 +14,8 @@ class CreateCoursesTable extends Migration
       $table->integer('limit');
       $table->string('slug');
       $table->text('description');
+      $table->boolean('full');
+      $table->string('image');
       $table->timestamps();
     });
   }
