@@ -38,7 +38,7 @@
       <div class="custom-file">
         <input type="file" name="image" accept="image/png, image/jpeg" id="customFileLang" class="custom-file-input">
         <label for="customFileLang" data-browse="Buscar" class="custom-file-label">Imagem da postagem</label>
-      </div><br><br></br>
+      </div><br><br><br>
       <input type="submit" class="btn btn-primary form-control" value="Cadastrar">
     </form>
   </div>

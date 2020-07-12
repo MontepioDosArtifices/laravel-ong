@@ -17,8 +17,8 @@ class CreateStudentsTable extends Migration
       $table->increments('id');
       $table->string('name');
       $table->string('email');
-      $table->integer('cpf');
-      $table->integer('phone');
+      $table->string('cpf');
+      $table->string('phone');
       $table->timestamps();
     });
   }

@@ -48,6 +48,7 @@
             <li><a href="#service">Serviços</a></li>
             <li><a href="#causes">Causas</a></li>
             <li><a href="#about">Sobre</a></li>
+            <li><a href="#courses">Cursos</a></li>
             <li><a href="#blog">Notícias</a></li>
             <li><a href="#contact">Contato</a></li>
             <li><a href="{{ route('donation.form') }}">Doar</a></li>
