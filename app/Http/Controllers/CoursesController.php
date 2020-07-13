@@ -45,7 +45,7 @@ class CoursesController extends Controller
 
   public function show(Courses $course)
   {
-    $allStudents = DB::select('select * from courses_student inner join students on student_id = students.id where course_id = (?)', [$course->id]);
+    $allStudents = DB::select('select * from courses_students inner join students on student_id = students.id where course_id = (?)', [$course->id]);
     return view('student-list', ['allStudents' => $allStudents]);
   }
 
@@ -67,7 +67,7 @@ class CoursesController extends Controller
 
   public function destroy(Courses $course)
   {
-    $course->delete();
+    DB::table('courses')->where('id', $course->id)->delete();
     return redirect()->route('course.index');
   }
 }

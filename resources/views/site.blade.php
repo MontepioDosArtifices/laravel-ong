@@ -224,6 +224,77 @@
     </div><!-- /.section-content -->
   </div><!-- /.tr-about-section -->
 
+  <div id="courses" class="tr-courses">
+    <div class="section-content tr-bg-white">
+      <div class="container">
+        <div class="section-header section-header-2">
+          <h1>Cursos</h1>
+          <div class="sub-title title-before">
+            <p>
+              Oferecemos cursos, desenvolvidos pelos nossos profissionais da área de educação, que são voltados para administração,
+              finanças, desenovlvimento pessoal, entre diversos outros conteúdos.
+            </p>
+          </div>
+        </div>
+        <!-- /.section-header -->
+        <div class="row">
+          @foreach ($courses as $course)
+            @if ($course->full == 0)
+              <div class="col-md-6 col-lg-4">
+                <div class="tr-post">
+                  <div class="entry-header">
+                    <div class="entry-thumbnail">
+                      <a href="{{ route('site.course.show', $course->slug) }}">
+                        <img src="{{ $course->image }}" alt="Imagem" class="img-fluid">
+                      </a>
+                    </div>
+                    <h2 class="entry-title"><a href="{{ route('site.course.show', ['title' => $course->slug]) }}">{{ $course->title }}</a></h2>
+                    <div class="entry-footer clearfix">
+                      <ul class="tr-list">
+                        <li class="float-left">
+                          <span class="tr-author">
+                            <img src="images/others/author1.png" class="img-fluid" alt="Image">
+                          </span>
+                          <a href="#"><span>Por</span> Admin</a>
+                        </li>
+                        <li class="float-right tr-date">{{ date('d/m/Y', strtotime($course->created_at)) }}</li>
+                      </ul>
+                    </div>
+                  </div><!-- /.entry-header -->
+                </div><!-- /.tr-post -->
+                <a href="{{route('site.course.post')}}">Ver mais</a>
+              </div>
+              @else
+            @endif
+          @endforeach
+        </div>
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="tr-about">
+                  <h2>Como nós ajudamos ?</h2>
+                  <p>
+                    Nós trazemos profissionais que têm a expertise necessária para ensinar os alunos a como lidar com situações adversas
+                    que podem surgir no ambiente de trabalho, especialmente dentro de uma ong.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="tr-about">
+                  <h2>Por que escolhemos ajudar?</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </div><!-- /.row -->
+          </div>
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.section-content -->
+  </div>
+
   <div class="tr-faq-section">
     <div class="section-content tr-bg-white">
       <div class="container">

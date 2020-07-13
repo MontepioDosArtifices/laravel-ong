@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+{{date_default_timezone_set('America/Sao_Paulo')}}
 <div class="page-wrapper">
   <div class="page-breadcrumb">
     <div class="row">
@@ -31,8 +32,9 @@
           <table id="zero_config" class="table table-striped table-bordered no-wrap">
             <thead>
               <tr>
+                <th>Imagem</th>
                 <th>Título</th>
-                <th>Limite de pessoas</th>
+                <th>Vagas</th>
                 <th>Descrição</th>
                 <th>Criação</th>
                 <th>Modificado</th>
@@ -44,7 +46,12 @@
               @foreach($allCourses as $course)
                 <tr>
                   <td>
-                    {{ $course->title }}
+                    <img src="{{ url("$course->image") }}" width="60px" height="60px" alt="Imagem" >
+                  </td>
+                  <td>
+                    <a href="{{route('course.show', ['course' => $course->id])}}">
+                      {{ $course->title }}
+                    </a>
                   </td>
                   <td>
                     {{ $course->limit }}
