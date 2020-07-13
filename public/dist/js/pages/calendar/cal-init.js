@@ -1,6 +1,22 @@
 ! function($) {
   "use strict";
 
+  const form = new FormData(document.getElementById('event-form'));
+  const request = { method: 'POST', body: form };
+
+  document.getElementById('event-form').addEventListener('submit', () => newEvent(event))
+
+  const newEvent = e => {
+    e.preventDefault();
+    fetch('http://localhost:8000/events', request)
+    .then(res => {
+      res.json().then(data => {
+        console.log(data);
+      });
+      $.CalendarApp.init();
+    });
+  };
+
   var CalendarApp = function() {
     this.$body = $("body")
     this.$calendar = $('#calendar'),
@@ -55,26 +71,19 @@
   CalendarApp.prototype.init = function() {
     this.enableDrag();
     /*  Initialize the calendar  */
-    var date = new Date();
-    var d = date.getDate();
-    var m = date.getMonth();
-    var y = date.getFullYear();
-    var form = '';
-    var today = new Date($.now());
     var defaultEvents = [];
 
     fetch('http://localhost:8000/events')
     .then(res => {
       res.json().then(events => {
-
-        events.forEach(item =>
+        events.forEach(item => {
           defaultEvents.push({
             title: item.title,
-            start: Date(Date.parse(item.start)),
-            end: Date(Date.parse(item.end)),
+            start: String(moment.utc(item.start)),
+            end: String(moment.utc(item.end)),
             className: item.className,
-          })
-        );
+          });
+        });
 
         var $this = this;
         $this.$calendarObj = $this.$calendar.fullCalendar({
