@@ -42,26 +42,32 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col-md-12">
-                      <div id="calendar-events" class="">
-                        <div class="calendar-events mb-3" data-class="bg-info"><i class="fa fa-circle text-info mr-2"></i>Evento um</div>
-                          <div class="calendar-events mb-3" data-class="bg-success">
-                            <i class="fa fa-circle text-success mr-2"></i>
-                            Evento dois
+                      <div id="calendar-events" class="d-flex flex-column justify-content-center">
+                        <form id="event-form" class="d-flex flex-column justify-content-center">
+                          @csrf
+                          <div class="form-group">
+                            <label for="title">Nome do evento</label>
+                            <input type="text" name="title" placeholder="Nome do evento..." class="form-control" id="title">
                           </div>
-                          <div class="calendar-events mb-3" data-class="bg-danger">
-                            <i class="fa fa-circle text-danger mr-2"></i>
-                            Evento três
+                          <div class="form-group">
+                            <label for="event_start">Início do evento</label>
+                            <input type="date" name="start" class="form-control" id="event_start">
                           </div>
-                          <div class="calendar-events mb-3" data-class="bg-warning">
-                            <i class="fa fa-circle text-warning mr-2"></i>
-                            Evento quatro
+                          <div class="form-group">
+                            <label for="event_end">Fim do evento</label>
+                            <input type="date" name="end" class="form-control" id="event_end">
                           </div>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="drop-remove">
-                          <label class="custom-control-label" for="drop-remove">
-                            Remover depois de soltar
-                          </label>
+                          <div class="form-group">
+                            <label for="className">Cor do evento</label>
+                            <select name="className" class="form-control" id="className">
+                              <option value="bg-info" selected>Azul</option>
+                              <option value="bg-warning">Amarelo</option>
+                              <option value="bg-danger">Vermelho</option>
+                              <option value="bg-purple">Roxo</option>
+                            </select>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
                         </div>
                       </div>
                     </div>
