@@ -16,10 +16,8 @@
         <div class="d-flex align-items-center">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb m-0 p-0">
-              <li class="breadcrumb-item">
-                <a href="{{url('/dashboard/financeiro')}}" class="text-muted">
-                  Financeiro
-                </a>
+              <li class="breadcrumb-item text-muted active">
+                Financeiro
               </li>
               <li class="breadcrumb-item text-muted active" aria-current="page">
                 Doações
@@ -106,9 +104,8 @@
                 <thead>
                   <tr>
                     <th>Estado</th>
-                    <th>Valor</th>
-                    <th>Causa</th>
                     <th>ID</th>
+                    <th>Valor</th>
                     <th>Nome</th>
                     <th>Modo</th>
                     <th>Data</th>
@@ -133,17 +130,10 @@
                         </span>
                       </td>
                       <td>
+                        {{$transaction['id']}}
+                      </td>
+                      <td>
                         {{'R$ '.number_format($transaction['amount']/100, 2, ',', '.')}}
-                      </td>
-                      <td>
-                        <a href="javascript:void(0)" class="font-weight-medium link">
-                          Salvador sem fome
-                        </a>
-                      </td>
-                      <td>
-                        <a href="javascript:void(0)" class="font-bold link">
-                          {{$transaction['id']}}
-                        </a>
                       </td>
                       <td>{{$transaction['customer']['name']}}</td>
                       <td>{{$transaction['payment_method'] === 'credit_card' ? 'Cartão de Crédito' : ''}}</td>
@@ -159,9 +149,8 @@
                 <tfoot>
                   <tr>
                     <th>Estado</th>
-                    <th>Valor</th>
-                    <th>Causa</th>
                     <th>ID</th>
+                    <th>Valor</th>
                     <th>Nome</th>
                     <th>Modo</th>
                     <th>Data</th>
@@ -169,33 +158,6 @@
                   </tr>
                 </tfoot>
               </table>
-              <ul class="pagination float-right">
-                <li class="page-item disabled">
-                  <a class="page-link" href="#" tabindex="-1">
-                    Anterior
-                  </a>
-                </li>
-                <li cass="page-item active">
-                  <a class="page-link" href="#">
-                    1
-                  </a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">2 <span class="sr-only">
-                    (current)
-                  </span></a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">
-                    3
-                  </a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">
-                    Próximo
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>

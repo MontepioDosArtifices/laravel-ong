@@ -35,9 +35,6 @@
 				<input type="password" id="password" name="password" placeholder="Senha" required>
 				<input type="submit" value="Entrar">
 			</form>
-			<div id="formFooter">
-				<a class="underlineHover" href="#">Esqueçi a senha</a>
-			</div>
 		</div>
 	</div>
 </body>

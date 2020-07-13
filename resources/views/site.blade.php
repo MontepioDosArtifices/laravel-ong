@@ -95,87 +95,6 @@
     </div><!-- /.service-content -->
   </div><!-- /.tr-service -->
 
-  <div id="causes" class="tr-causes-section">
-    <div class="section-content tr-bg-white">
-      <div class="container">
-        <div class="section-header section-header-2">
-            <h1>Nossas causas</h1>
-            <div class="sub-title title-before">
-                <p>Nós fazemos a diferença na vida das pessoas durantes fases difíceis. Contribuindo com medicamento, comida e um lar.</p>
-            </div>
-        </div><!-- /.section-header -->
-
-        <div class="causes-content">
-          <div class="row">
-            <div class="col-md-6 col-lg-4">
-              <div class="tr-causes">
-                <div class="causes-thumb">
-                  <img src="images/causes/1.jpg" alt="Image" class="img-fluid">
-                  <div class="tr-overlay">
-                    <div class="tr-paragraph">
-                      <p>Insira aqui o texto que deverá ser usado nesta área do site! Insa aqui o texto que ...</p>
-                    </div>
-                    <div class="tr-donation">
-                      <ul class="global-list">
-                        <li>Arrecadado: R$ 6.300</li>
-                        <li>Meta:  R$ 75.000</li>
-                      </ul>
-                    </div>
-                    <a href="#" class="btn btn-primary">Apoiar causa</a>
-                  </div>
-                </div>
-                <h2><a href="#">Causa 01</a></h2>
-                <span>Destino da causa</span>
-              </div><!-- /.tr-causes -->
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="tr-causes">
-                <div class="causes-thumb">
-                  <img src="images/causes/2.jpg" alt="Image" class="img-fluid">
-                  <div class="tr-overlay">
-                    <div class="tr-paragraph">
-                      <p>Insira aqui o texto que deverá ser usado nesta área do site! Insa aqui o texto que ...</p>
-                    </div>
-                    <div class="tr-donation">
-                      <ul class="global-list">
-                        <li>Arrecadado: R$ 6.300</li>
-                        <li>Meta:  R$ 75.000</li>
-                      </ul>
-                    </div>
-                    <a href="#" class="btn btn-primary">Apoiar causa</a>
-                    </div>
-                  </div>
-                  <h2><a href="#">Causa 02</a></h2>
-                  <span>Destino da causa</span>
-                </div><!-- /.tr-causes -->
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="tr-causes">
-                <div class="causes-thumb">
-                  <img src="images/causes/3.jpg" alt="Image" class="img-fluid">
-                  <div class="tr-overlay">
-                    <div class="tr-paragraph">
-                      <p>Insira aqui o texto que deverá ser usado nesta área do site! Insa aqui o texto que ...</p>
-                    </div>
-                    <div class="tr-donation">
-                      <ul class="global-list">
-                        <li>Arrecadado: R$ 6.300</li>
-                        <li>Meta:  R$ 75.000</li>
-                      </ul>
-                    </div>
-                    <a href="#" class="btn btn-primary">Apoiar causa</a>
-                    </div>
-                  </div>
-                  <h2><a href="#">Causa 02</a></h2>
-                  <span>Destino da causa</span>
-                </div><!-- /.tr-causes -->
-            </div>
-          </div><!-- /.row -->
-        </div><!-- /.causes-content -->
-      </div><!-- /.container -->
-    </div><!-- /.section-content -->
-  </div><!-- /.tr-causes-section -->
-
   <div id="about" class="tr-about-section">
     <div class="section-content tr-bg-white">
       <div class="container">
@@ -224,77 +143,6 @@
     </div><!-- /.section-content -->
   </div><!-- /.tr-about-section -->
 
-  <div id="courses" class="tr-courses">
-    <div class="section-content tr-bg-white">
-      <div class="container">
-        <div class="section-header section-header-2">
-          <h1>Cursos</h1>
-          <div class="sub-title title-before">
-            <p>
-              Oferecemos cursos, desenvolvidos pelos nossos profissionais da área de educação, que são voltados para administração,
-              finanças, desenovlvimento pessoal, entre diversos outros conteúdos.
-            </p>
-          </div>
-        </div>
-        <!-- /.section-header -->
-        <div class="row">
-          @foreach ($courses as $course)
-            @if ($course->full == 0)
-              <div class="col-md-6 col-lg-4">
-                <div class="tr-post">
-                  <div class="entry-header">
-                    <div class="entry-thumbnail">
-                      <a href="{{ route('site.course.show', $course->slug) }}">
-                        <img src="{{ $course->image }}" alt="Imagem" class="img-fluid">
-                      </a>
-                    </div>
-                    <h2 class="entry-title"><a href="{{ route('site.course.show', ['title' => $course->slug]) }}">{{ $course->title }}</a></h2>
-                    <div class="entry-footer clearfix">
-                      <ul class="tr-list">
-                        <li class="float-left">
-                          <span class="tr-author">
-                            <img src="images/others/author1.png" class="img-fluid" alt="Image">
-                          </span>
-                          <a href="#"><span>Por</span> Admin</a>
-                        </li>
-                        <li class="float-right tr-date">{{ date('d/m/Y', strtotime($course->created_at)) }}</li>
-                      </ul>
-                    </div>
-                  </div><!-- /.entry-header -->
-                </div><!-- /.tr-post -->
-                <a href="{{route('site.course.post')}}">Ver mais</a>
-              </div>
-              @else
-            @endif
-          @endforeach
-        </div>
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="tr-about">
-                  <h2>Como nós ajudamos ?</h2>
-                  <p>
-                    Nós trazemos profissionais que têm a expertise necessária para ensinar os alunos a como lidar com situações adversas
-                    que podem surgir no ambiente de trabalho, especialmente dentro de uma ong.
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="tr-about">
-                  <h2>Por que escolhemos ajudar?</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                </div>
-              </div>
-            </div><!-- /.row -->
-          </div>
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </div><!-- /.section-content -->
-  </div>
-
   <div class="tr-faq-section">
     <div class="section-content tr-bg-white">
       <div class="container">
@@ -337,6 +185,133 @@
     </div><!-- /.section-content -->
   </div><!-- /.tr-faq-section -->
 
+  <div id="gallery" class="tr-photo-gallery">
+    <div class="gallery-content">
+      <ul class="global-list">
+        <li>
+          <div class="tr-photo">
+            <img src="images/gallery/1.jpg" alt="Image" class="img-fluid">
+            <div class="photo-overlay">
+              <div class="overlay-content">
+                <div class="zoom-icon">
+                  <a href="images/gallery/1.jpg"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
+                </div>
+                <span>Nome Sobrenome</span>
+                <h2>Algum título</h2>
+              </div><!-- /.overlay-content -->
+            </div>
+          </div><!-- /.tr-photo -->
+        </li>
+        <li>
+          <div class="tr-photo">
+            <img src="images/gallery/2.jpg" alt="Image" class="img-fluid">
+            <div class="photo-overlay">
+              <div class="overlay-content">
+                <div class="zoom-icon">
+                  <a href="images/gallery/2.jpg"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
+                </div>
+                <span>Nome Sobrenome</span>
+                <h2>Algum título</h2>
+              </div><!-- /.overlay-content -->
+            </div>
+          </div><!-- /.tr-photo -->
+        </li>
+        <li>
+          <div class="tr-photo">
+            <img src="images/gallery/3.jpg" alt="Image" class="img-fluid">
+            <div class="photo-overlay">
+              <div class="overlay-content">
+                <div class="zoom-icon">
+                  <a href="images/gallery/3.jpg"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
+                </div>
+                <span>Nome Sobrenome</span>
+                <h2>Algum título</h2>
+              </div><!-- /.overlay-content -->
+            </div>
+          </div><!-- /.tr-photo -->
+        </li>
+        <li>
+          <div class="tr-photo">
+            <img src="images/gallery/4.jpg" alt="Image" class="img-fluid">
+            <div class="photo-overlay">
+              <div class="overlay-content">
+                <div class="zoom-icon">
+                  <a href="images/gallery/4.jpg"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
+                </div>
+                <span>Nome Sobrenome</span>
+                <h2>Algum título</h2>
+              </div><!-- /.overlay-content -->
+            </div>
+          </div><!-- /.tr-photo -->
+        </li>
+        <li>
+          <div class="tr-photo">
+            <img src="images/gallery/5.jpg" alt="Image" class="img-fluid">
+            <div class="photo-overlay">
+              <div class="overlay-content">
+                <div class="zoom-icon">
+                  <a href="images/gallery/5.jpg"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
+                </div>
+                <span>Nome Sobrenome</span>
+                <h2>Algum título</h2>
+              </div><!-- /.overlay-content -->
+            </div>
+          </div><!-- /.tr-photo -->
+        </li>
+        <li>
+          <div class="tr-photo">
+            <img src="images/gallery/6.jpg" alt="Image" class="img-fluid">
+            <div class="photo-overlay">
+              <div class="overlay-content">
+                <div class="zoom-icon">
+                  <a href="images/gallery/6.jpg"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
+                </div>
+                <span>Nome Sobrenome</span>
+                <h2>Algum título</h2>
+              </div><!-- /.overlay-content -->
+            </div>
+          </div><!-- /.tr-photo -->
+        </li>
+      </ul>
+    </div><!-- /.section-content -->
+  </div><!-- /.tr-photo-gallery -->
+
+  <div id="courses" class="tr-courses">
+    <div class="section-content tr-bg-white">
+      <div class="container">
+        <div class="section-header section-header-2">
+          <h1>Cursos</h1>
+          <div class="sub-title title-before">
+            <p>
+              Oferecemos cursos, desenvolvidos pelos nossos profissionais da área de educação, que são voltados para administração,
+              finanças, desenovlvimento pessoal, entre diversos outros conteúdos.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          @foreach ($courses as $course)
+            @if ($course->full == 0)
+              <div class="col-md-6 col-lg-4">
+                <div class="tr-post">
+                  <div class="entry-header">
+                    <div class="entry-thumbnail">
+                      <a href="{{ route('site.course.show', $course->slug) }}">
+                        <img src="{{ $course->image }}" alt="Imagem" class="img-fluid">
+                      </a>
+                    </div>
+                    <h2 class="entry-title"><a href="{{ route('site.course.show', ['title' => $course->slug]) }}">{{ $course->title }}</a></h2>
+                  </div><!-- /.entry-header -->
+                </div><!-- /.tr-post -->
+                <a href="{{route('site.course.post')}}">Ver mais</a>
+              </div>
+              @else
+            @endif
+          @endforeach
+        </div>
+      </div><!-- /.container -->
+    </div><!-- /.section-content -->
+  </div>
+
   <div id="blog" class="tr-blog">
     <div class="section-content">
       <div class="container">
@@ -357,17 +332,6 @@
                     </a>
                   </div>
                   <h2 class="entry-title"><a href="{{ route('site.post.show', $post->slug) }}">{{ $post->title }}</a></h2>
-                  <div class="entry-footer clearfix">
-                    <ul class="tr-list">
-                      <li class="float-left">
-                        <span class="tr-author">
-                          <img src="images/others/author1.png" class="img-fluid" alt="Image">
-                        </span>
-                        <a href="#"><span>Por</span> Admin</a>
-                      </li>
-                      <li class="float-right tr-date">{{ date('d/m/Y', strtotime($post->created_at)) }}</li>
-                    </ul>
-                  </div>
                 </div><!-- /.entry-header -->
               </div><!-- /.tr-post -->
             </div>
@@ -432,113 +396,6 @@
       </div><!-- /.container -->
     </div><!-- /.section-content -->
   </div><!-- /.tr-clients -->
-
-  <div class="tr-subscribe">
-    <div class="section-content tr-parallax bg-image" style="background-image: none; position: relative; z-index: 0;">
-      <div class="container text-center">
-        <div class="subscribe-info">
-          <h1>Receba nossas novidades</h1>
-          <p>Insira aqui o texto que deverá ser usado nesta área do site! Insira aqui o texto que deverá ser usado nesta área do site!</p>
-
-          <form action="#" class="tr-form">
-            <input type="email" class="form-control" placeholder="Digite seu e-mail">
-            <input type="submit" class="btn btn-primary" value="Inscreva-se agora">
-          </form>
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </div><!-- /.section-content -->
-  </div><!-- /.tr-subscribe -->
-
-  <div id="gallery" class="tr-photo-gallery">
-    <div class="gallery-content">
-      <ul class="global-list">
-        <li>
-          <div class="tr-photo">
-            <img src="images/gallery/1.jpg" alt="Image" class="img-fluid">
-            <div class="photo-overlay">
-              <div class="overlay-content">
-                <div class="zoom-icon">
-                  <a href="images/gallery/1.jpg"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-                </div>
-                <span>Nome Sobrenome</span>
-                <h2>Título da causa</h2>
-              </div><!-- /.overlay-content -->
-            </div>
-          </div><!-- /.tr-photo -->
-        </li>
-        <li>
-          <div class="tr-photo">
-            <img src="images/gallery/2.jpg" alt="Image" class="img-fluid">
-            <div class="photo-overlay">
-              <div class="overlay-content">
-                <div class="zoom-icon">
-                  <a href="images/gallery/2.jpg"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-                </div>
-                <span>Nome Sobrenome</span>
-                <h2>Título da causa</h2>
-              </div><!-- /.overlay-content -->
-            </div>
-          </div><!-- /.tr-photo -->
-        </li>
-        <li>
-          <div class="tr-photo">
-            <img src="images/gallery/3.jpg" alt="Image" class="img-fluid">
-            <div class="photo-overlay">
-              <div class="overlay-content">
-                <div class="zoom-icon">
-                  <a href="images/gallery/3.jpg"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-                </div>
-                <span>Nome Sobrenome</span>
-                <h2>Título da causa</h2>
-              </div><!-- /.overlay-content -->
-            </div>
-          </div><!-- /.tr-photo -->
-        </li>
-        <li>
-          <div class="tr-photo">
-            <img src="images/gallery/4.jpg" alt="Image" class="img-fluid">
-            <div class="photo-overlay">
-              <div class="overlay-content">
-                <div class="zoom-icon">
-                  <a href="images/gallery/4.jpg"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-                </div>
-                <span>Nome Sobrenome</span>
-                <h2>Título da causa</h2>
-              </div><!-- /.overlay-content -->
-            </div>
-          </div><!-- /.tr-photo -->
-        </li>
-        <li>
-          <div class="tr-photo">
-            <img src="images/gallery/5.jpg" alt="Image" class="img-fluid">
-            <div class="photo-overlay">
-              <div class="overlay-content">
-                <div class="zoom-icon">
-                  <a href="images/gallery/5.jpg"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-                </div>
-                <span>Nome Sobrenome</span>
-                <h2>Título da causa</h2>
-              </div><!-- /.overlay-content -->
-            </div>
-          </div><!-- /.tr-photo -->
-        </li>
-        <li>
-          <div class="tr-photo">
-            <img src="images/gallery/6.jpg" alt="Image" class="img-fluid">
-            <div class="photo-overlay">
-              <div class="overlay-content">
-                <div class="zoom-icon">
-                  <a href="images/gallery/6.jpg"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-                </div>
-                <span>Nome Sobrenome</span>
-                <h2>Título da causa</h2>
-              </div><!-- /.overlay-content -->
-            </div>
-          </div><!-- /.tr-photo -->
-        </li>
-      </ul>
-    </div><!-- /.section-content -->
-  </div><!-- /.tr-photo-gallery -->
 
   <div id="contact" class="tr-contact-section">
     <div class="section-content tr-bg-white">

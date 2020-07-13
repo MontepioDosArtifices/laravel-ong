@@ -15,10 +15,8 @@
         <div class="d-flex align-items-center">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb m-0 p-0">
-              <li class="breadcrumb-item">
-                <a href="{{url('dashboard/')}}" class="text-muted">
-                  Administrativo
-                </a>
+              <li class="breadcrumb-item text-muted active">
+                Administrativo
               </li>
               <li class="breadcrumb-item text-muted active" aria-current="page">
                 Funcionário

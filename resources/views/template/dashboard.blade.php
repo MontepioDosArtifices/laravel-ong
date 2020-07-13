@@ -61,8 +61,8 @@
           </ul>
           <ul class="navbar-nav float-right">
             <li class="nav-item d-none d-md-block">
-              <a class="nav-link" href="javascript:void(0)">
-                <form method="get" action="{{route('dashboard')}}">
+              <a class="nav-link" href="#">
+                <form>
                   <div class="customize-input">
                     <input class="form-control custom-shadow custom-radius border-0 bg-white" type="search" placeholder="Busca" aria-label="Search">
                     <i class="form-control-icon" data-feather="search"></i>
