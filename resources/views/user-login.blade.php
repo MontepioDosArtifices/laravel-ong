@@ -27,8 +27,8 @@
 </head>
 <body>
 	<div class="wrapper">
-		<a href="#"><img src="{{url('images/logo.png')}}" width="150px" alt="MontePio dos Artífices"></a>
-		<div id="formContent">
+    <div id="formContent">
+      <div style="margin: 20px"><img src="{{url('images/logo.png')}}" width="150px" alt="MontePio dos Artífices"></div>
       <form method="post" action="{{route('user.login.send')}}">
         @csrf
 				<input type="email" id="login" name="email" placeholder="E-mail" required>

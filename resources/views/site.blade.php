@@ -17,7 +17,7 @@
                   <img src="images/others/featured1.png" alt="Image" class="img-fluid">
                 </div>
                 <h2>Atuação</h2>
-                <h3>Nós estamos em 30 países</h3>
+                <h3>Atuamos em Salvador - BA</h3>
               </div><!-- /.featured -->
             </div>
             <div class="col-md-4">
@@ -25,8 +25,8 @@
                 <div class="featured-icon">
                   <img src="images/others/featured2.png" alt="Image" class="img-fluid">
                 </div>
-                <h2>Promessa</h2>
-                <h3>70% das doações vão para as causas</h3>
+                <h2>Compromisso</h2>
+                <h3>As doações são inteiramente para nossas causas socias</h3>
               </div><!-- /.featured -->
             </div>
             <div class="col-md-4">
@@ -35,7 +35,7 @@
                     <img src="images/others/featured3.png" alt="Image" class="img-fluid">
                 </div>
                 <h2>Nossa ajuda</h2>
-                <h3>Nós ajudamos pessoas desde 1987</h3>
+                <h3>Nós ajudamos mais de 11.000 vidas desde 1980</h3>
               </div><!-- /.featured -->
             </div>
           </div><!-- /.row -->
@@ -49,8 +49,8 @@
       <div class="container">
         <div class="section-header header-style-1">
           <div class="row">
-            <div class="col-lg-4">
-              <h1>Sociedade Montepio dos Artífices</h1>
+            <div class="col-lg-4 d-flex flex-column justify-content-center">
+              <h1 style="font-size: 29px">Associação Beneficente MontePio dos Artífices</h1>
             </div>
             <div class="col-lg-8">
               <div class="sub-title title-before">
@@ -66,7 +66,7 @@
                 <img src="images/others/service1.png" alt="Image" class="img-fluid">
               </div>
               <h2>Seja voluntário</h2>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+              <p>Ser voluntário é mais do que se imagina, é se dedicar a ajudar sem esperar nada em troca.</p>
               <a href="#">Ler mais</a>
             </div><!-- /.tr-service -->
           </div>
@@ -76,7 +76,7 @@
                 <img src="images/others/service2.png" alt="Image" class="img-fluid">
               </div>
               <h2>Doações</h2>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+              <p>A verdadeira caridade só ocorre quando não há a noção de dar, de doador ou de doação.</p>
               <a href="#">Ler mais</a>
             </div><!-- /.tr-service -->
           </div>
@@ -86,7 +86,7 @@
                 <img src="images/others/service3.png" alt="Image" class="img-fluid">
               </div>
               <h2>Arrecadados</h2>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+              <p>Saiba como sua doação é destinada e como ela impacta na vida de milhares de pessoas.</p>
               <a href="#">Ler mais</a>
             </div><!-- /.tr-service -->
           </div>
@@ -99,9 +99,9 @@
     <div class="section-content tr-bg-white">
       <div class="container">
         <div class="section-header section-header-2">
-          <h1>Quem nós somos</h1>
+          <h1>Quem somos</h1>
           <div class="sub-title title-before">
-            <p>Nós fazemos a diferença na vida das pessoas durantes fases difíceis. Contribuindo com medicamento, comida e um lar.</p>
+            <p>A Associação Beneficente MontePio dos Artífices, é uma ONG sem fins lucrativos, buscando ajudar vidas necessitadas.</p>
           </div>
         </div><!-- /.section-header -->
         <div class="row">
@@ -113,11 +113,11 @@
           <div class="col-lg-5">
             <div class="tr-about">
               <h2>Nossa história</h2>
-              <p>Nós fazemos a diferença na vida das pessoas durantes fases difíceis. Contribuindo com medicamento, comida e um lar. Nós fazemos a diferença na vida das pessoas durantes fases difíceis. Contribuindo com medicamento, comida e um lar.</p>
+              <p>Surgindo em meados dos anos 70, a instituição possui uma história com mais de 50 anos. Sempre fazendo a diferença em todas as campanhas e multirões.</p>
             </div>
             <div class="tr-about">
               <h2>Missão</h2>
-              <p>Nós fazemos a diferença na vida das pessoas durantes fases difíceis. Contribuindo com medicamento, comida e um lar. Nós fazemos a diferença na vida das pessoas durantes fases difíceis. Contribuindo com medicamento, comida e um lar.</p>
+              <p>Muito mais que dar a mão em momentos difíceis, nossa missão é poder proporcionar uma melhora de vida, para que nossa ajuda não seja mais necessária à aqueles que acolhemos, e que assim, este possa retribuir ajudando mais pessoas.</p>
             </div>
           </div>
         </div><!-- /.row -->
@@ -127,13 +127,13 @@
               <div class="col-lg-6">
                 <div class="tr-about">
                   <h2>Como nós ajudamos ?</h2>
-                  <p>Nós fazemos a diferença na vida das pessoas durantes fases difíceis. Contribuindo com medicamento, comida e um lar. Nós fazemos a diferença na vida das pessoas durantes fases difíceis. Contribuindo com medicamento, comida e um lar.</p>
+                  <p>Muito mais que dar a mão em momentos difíceis, nossa missão é poder proporcionar uma melhora de vida, para que nossa ajuda não seja mais necessária à aqueles que acolhemos, e que assim, este possa retribuir ajudando mais pessoas.</p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="tr-about">
                   <h2>Por que escolhemos ajudar?</h2>
-                  <p>Nós fazemos a diferença na vida das pessoas durantes fases difíceis. Contribuindo com medicamento, comida e um lar. Nós fazemos a diferença na vida das pessoas durantes fases difíceis. Contribuindo com medicamento, comida e um lar.</p>
+                  <p>Muito mais que dar a mão em momentos difíceis, nossa missão é poder proporcionar uma melhora de vida, para que nossa ajuda não seja mais necessária à aqueles que acolhemos, e que assim, este possa retribuir ajudando mais pessoas.</p>
                 </div>
               </div>
             </div><!-- /.row -->
@@ -149,7 +149,7 @@
         <div class="section-header section-header-2">
           <h1>Perguntas</h1>
           <div class="sub-title title-before">
-            <p>Insira aqui o texto que deverá ser usado nesta área do site! Insira aqui o texto que deverá ser usado nesta área do site! </p>
+            <p>Saiba um pouco mais sobre nós, através das perguntas mais comuns que recebemos.</p>
           </div>
         </div><!-- /.section-header -->
 
@@ -157,26 +157,28 @@
           <div class="row">
             <div class="col-md-6">
               <div class="tr-faq">
-                <h2>Primeira pergunta</h2>
-                <p>Insira aqui o texto que deverá ser usado nesta área do site! Insira aqui o texto que deverá ser usado nesta área do site! Insira aqui o texto que deverá ser usado nesta área do site!</p>
+                <h2>Onde estão localizados?</h2>
+                <p>Nossa base de operação é um prédio histórico, com mais 500 anos de existência, e está localizado no Pelourinho em Salvador - BA.</p>
               </div><!-- /.tr-faq -->
             </div>
             <div class="col-md-6">
               <div class="tr-faq">
-                <h2>Segunda pergunta</h2>
-                <p>Insira aqui o texto que deverá ser usado nesta área do site! Insira aqui o texto que deverá ser usado nesta área do site! Insira aqui o texto que deverá ser usado nesta área do site!</p>
+                <h2>Eu posso ser um voluntário?</h2>
+                <p>Claro! Incentivamos a todos a ter essa experiência, e trabalhamos muito para conectar mais pessoas à nossa rede do bem!</p>
               </div><!-- /.tr-faq -->
             </div>
             <div class="col-md-6">
               <div class="tr-faq">
-                <h2>Terceira pergunta</h2>
-                <p>Insira aqui o texto que deverá ser usado nesta área do site! Insira aqui o texto que deverá ser usado nesta área do site! Insira aqui o texto que deverá ser usado nesta área do site!</p>
+                <h2>Como faço para ser um voluntário?</h2>
+                <p>Assim como ficamos felizes em ter-los conosco, precisamos avaliar se as condições para essa parceria está de acordo, por isso iremos avaliar todas as questões atraves do contato por e-mail :)</p>
+                <p>Clique <a href="#contact">aqui</a> para entar em contato!</p>
               </div><!-- /.tr-faq -->
             </div>
             <div class="col-md-6">
               <div class="tr-faq">
-                <h2>Quarta pergunta</h2>
-                <p>Insira aqui o texto que deverá ser usado nesta área do site! Insira aqui o texto que deverá ser usado nesta área do site! Insira aqui o texto que deverá ser usado nesta área do site!</p>
+                <h2>Como posso doar?</h2>
+                <p>Para realizar uma doação, basta preencher os dados do nosso formulário de doação.</p>
+                <p>Clique <a href="{{route('donation.form')}}">aqui</a> para ser direcionado :)</p>
               </div><!-- /.tr-faq -->
             </div>
           </div><!-- /.row -->
@@ -196,8 +198,8 @@
                 <div class="zoom-icon">
                   <a href="images/gallery/1.jpg"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
                 </div>
-                <span>Nome Sobrenome</span>
-                <h2>Algum título</h2>
+                <span>Pedro Amaral</span>
+                <h2>Educa Brasil</h2>
               </div><!-- /.overlay-content -->
             </div>
           </div><!-- /.tr-photo -->
@@ -210,8 +212,8 @@
                 <div class="zoom-icon">
                   <a href="images/gallery/2.jpg"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
                 </div>
-                <span>Nome Sobrenome</span>
-                <h2>Algum título</h2>
+                <span>Comunidade da roçinha</span>
+                <h2>Salvador sem fome</h2>
               </div><!-- /.overlay-content -->
             </div>
           </div><!-- /.tr-photo -->
@@ -224,8 +226,8 @@
                 <div class="zoom-icon">
                   <a href="images/gallery/3.jpg"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
                 </div>
-                <span>Nome Sobrenome</span>
-                <h2>Algum título</h2>
+                <span>Jõao Pedro</span>
+                <h2>Campanha de agasalhos</h2>
               </div><!-- /.overlay-content -->
             </div>
           </div><!-- /.tr-photo -->
@@ -238,8 +240,8 @@
                 <div class="zoom-icon">
                   <a href="images/gallery/4.jpg"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
                 </div>
-                <span>Nome Sobrenome</span>
-                <h2>Algum título</h2>
+                <span>Nice Silva</span>
+                <h2>Educação para todos</h2>
               </div><!-- /.overlay-content -->
             </div>
           </div><!-- /.tr-photo -->
@@ -252,8 +254,8 @@
                 <div class="zoom-icon">
                   <a href="images/gallery/5.jpg"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
                 </div>
-                <span>Nome Sobrenome</span>
-                <h2>Algum título</h2>
+                <span>Agatha Moreira</span>
+                <h2>Educa Brasil</h2>
               </div><!-- /.overlay-content -->
             </div>
           </div><!-- /.tr-photo -->
@@ -266,8 +268,8 @@
                 <div class="zoom-icon">
                   <a href="images/gallery/6.jpg"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
                 </div>
-                <span>Nome Sobrenome</span>
-                <h2>Algum título</h2>
+                <span>Comunidade da roçinha</span>
+                <h2>Salvador sem fome</h2>
               </div><!-- /.overlay-content -->
             </div>
           </div><!-- /.tr-photo -->
@@ -283,8 +285,7 @@
           <h1>Cursos</h1>
           <div class="sub-title title-before">
             <p>
-              Oferecemos cursos, desenvolvidos pelos nossos profissionais da área de educação, que são voltados para administração,
-              finanças, desenovlvimento pessoal, entre diversos outros conteúdos.
+              Nós oferecemos cursos em determinados períodos do ano, desenvolvidos pelos nossos profissionais da área de educação. E a adesão é livre para todos :)
             </p>
           </div>
         </div>
@@ -318,7 +319,7 @@
         <div class="section-header section-header-2">
           <h1>Ultimas notícias</h1>
           <div class="sub-title title-before">
-            <p>Insira aqui o texto que deverá ser usado nesta área do site! Insira aqui o texto que deverá ser usado nesta área do site! Insira aqui o texto que deverá ser usado nesta área do site!</p>
+            <p>Confira aqui todas as novidades da nossa insituição!</p>
           </div>
         </div><!-- /.section-header -->
         <div class="row">
@@ -348,7 +349,7 @@
         <div class="section-header section-header-2">
           <h1>Principais parceiros</h1>
           <div class="sub-title title-before">
-            <p>Insira aqui o texto que deverá ser usado nesta área do site! Insira aqui o texto que deverá ser usado nesta área do site! </p>
+            <p>Estes aqui, são todas as incríveis empresas que apoiam as nossas causas!</p>
           </div>
         </div><!-- /.section-header -->
         <div class="row">
@@ -403,7 +404,7 @@
         <div class="section-header section-header-2">
           <h1>Onde nos achar</h1>
           <div class="sub-title title-before">
-            <p>Insira aqui o texto que deverá ser usado nesta área do site! Insira aqui o texto que deverá ser usado nesta área do site!</p>
+            <p>Entre em contato conosco, nós vamos adorar conversar com você!!</p>
           </div>
         </div><!-- /.section-header -->
         <div class="row">
@@ -446,9 +447,9 @@
                   <div class="tr-info">
                     <h2>Contato</h2>
                     <ul class="global-list">
-                      <li>Tel : (71) 99999-9999</li>
-                      <li>Email : contato@montepio.com.br</li>
-                      <li>Site : <a href="#">www.montepio.com.br</a></li>
+                      <li>Tel : (71) 9 9291-6323</li>
+                      <li>Email : contato@montepioartifices.com</li>
+                      <li>Site : <a href="#">www.montepioartifices.com.br</a></li>
                     </ul>
                   </div>
                 </li>
@@ -470,39 +471,39 @@
           <div class="row">
             <div class="col-md-4">
               <div class="tr-help">
-                <a href="#">
+                <a style="cursor: pointer">
                   <span class="tr-icon">
                     <img src="images/others/icon1.png" alt="Image" class="img-fluid">
                   </span>
                   <span class="help-info">
                     <span>Compartilhe</span>
-                    <span class="title">com outros</span>
+                    <span class="title">com todos!</span>
                   </span>
                 </a>
               </div>
             </div>
             <div class="col-md-4">
               <div class="tr-help">
-                <a href="#">
+                <a href="doar">
                   <span class="tr-icon">
                     <img src="images/others/icon2.png" alt="Image" class="img-fluid">
                   </span>
                   <span class="help-info">
                     <span>Doe</span>
-                    <span class="title">Para uma vida</span>
+                    <span class="title">Para uma vida!</span>
                   </span>
                 </a>
               </div>
             </div>
             <div class="col-md-4">
               <div class="tr-help">
-                <a href="#">
+                <a style="cursor: pointer">
                   <span class="tr-icon">
                     <img src="images/others/icon3.png" alt="Image" class="img-fluid">
                   </span>
                   <span class="help-info">
-                    <span>Salve</span>
-                    <span class="title">A terra</span>
+                    <span>Ajude</span>
+                    <span class="title">O próximo!</span>
                   </span>
                 </a>
               </div>
