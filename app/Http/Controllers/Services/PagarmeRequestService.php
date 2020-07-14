@@ -45,7 +45,7 @@ class PagarmeRequestService extends BaseRequestService
 
     $this->post('transactions', $data);
 
-    return redirect()->route('donation.form');
+    return redirect()->route('site');
   }
 
   public function getTransactions()
