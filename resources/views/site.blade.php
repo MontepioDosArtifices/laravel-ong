@@ -6,7 +6,7 @@
       <div class="container">
         <div class="banner-info">
           <h1>Sua contribuição ajuda milhares de vidas</h1>
-          <p>Nós fazemos a diferença na vida das pessoas durantes fases difíceis. Contribuindo com medicamento, comida e um lar. Nós fazemos a diferença na vida das pessoas durantes fases difíceis. Contribuindo com medicamento, comida e um lar.</p>
+          <p>A Associação Beneficente MontePio dos Artífices, é uma ONG sem fins lucrativos, buscando ajudar vidas necessitadas. A Associação Beneficente MontePio dos Artífices, é uma ONG sem fins lucrativos, buscando ajudar vidas necessitadas.</p>
           <a href="{{ route('donation.form') }}" class="btn btn-primary">Doar agora</a>
         </div><!-- /.banner-info -->
         <div class="tr-featured text-center">
@@ -54,7 +54,7 @@
             </div>
             <div class="col-lg-8">
               <div class="sub-title title-before">
-                <p>Nós fazemos a diferença na vida das pessoas durantes fases difíceis. Contribuindo com medicamento, comida e um lar.</p>
+                <p>A Associação Beneficente MontePio dos Artífices, é uma ONG sem fins lucrativos, buscando ajudar vidas necessitadas.</p>
               </div>
             </div>
           </div><!-- /.row -->
@@ -67,7 +67,6 @@
               </div>
               <h2>Seja voluntário</h2>
               <p>Ser voluntário é mais do que se imagina, é se dedicar a ajudar sem esperar nada em troca.</p>
-              <a href="#">Ler mais</a>
             </div><!-- /.tr-service -->
           </div>
           <div class="col-md-4">
@@ -75,9 +74,8 @@
               <div class="service-icon">
                 <img src="images/others/service2.png" alt="Image" class="img-fluid">
               </div>
-              <h2>Doações</h2>
+              <h2>Doação</h2>
               <p>A verdadeira caridade só ocorre quando não há a noção de dar, de doador ou de doação.</p>
-              <a href="#">Ler mais</a>
             </div><!-- /.tr-service -->
           </div>
           <div class="col-md-4">
@@ -86,8 +84,7 @@
                 <img src="images/others/service3.png" alt="Image" class="img-fluid">
               </div>
               <h2>Arrecadados</h2>
-              <p>Saiba como sua doação é destinada e como ela impacta na vida de milhares de pessoas.</p>
-              <a href="#">Ler mais</a>
+              <p>Sua contribuição é destinidada para salvar as vidas de milhares de pessoas.</p>
             </div><!-- /.tr-service -->
           </div>
         </div><!-- /.row -->
