@@ -32,11 +32,11 @@
       <h1>Dados Pessoais</h1>
       @csrf
       <input type="text" name="name" class="form-control" placeholder="Nome completo" required>
-      <input type="text" name="cpf" class="form-control" placeholder="CPF" maxlength="11" required>
+      <input type="cpf" name="cpf" class="form-control" placeholder="CPF" maxlength="15" required>
       <input type="email" name="email" class="form-control" placeholder="E-mail" required>
       <input type="password" name="password" class="form-control" placeholder="Senha" required>
       <input type="password" name="password_confirmed" class="form-control" placeholder="Confirmar senha" required>
-      <input type="text" name="phone" class="form-control" placeholder="Telefone" maxlength="11" required>
+      <input type="phone" name="phone" class="form-control" placeholder="Telefone" maxlength="16" required>
       <input type="text" name="office" class="form-control" placeholder="Cargo"></br>
       <input type="submit" class="btn btn-primary form-control" value="Cadastrar">
     </form>
