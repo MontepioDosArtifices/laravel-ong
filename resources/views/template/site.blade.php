@@ -94,5 +94,7 @@
   <script src="{{ url('js/slick.min.js') }}"></script>
   <script src="{{ url('js/main.js') }}"></script>
   <script src="{{ url('js/fontawesome.js') }}"></script>
+  <script src="{{ url('assets/libs/inputmask/jquery.inputmask.min.js') }}"></script>
+  <script src="{{ url('js/inputmask.js') }}"></script>
 </body>
 </html>
