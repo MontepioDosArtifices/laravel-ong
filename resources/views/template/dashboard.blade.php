@@ -297,6 +297,7 @@
   <script src="{{url('/assets/libs/popper.js/dist/umd/popper.min.js')}}"></script>
   <script src="{{url('/assets/libs/bootstrap/dist/js/bootstrap.min.js')}}"></script>
   <script src="{{url('/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js')}}"></script>
+  <script src="{{url('assets/libs/inputmask/jquery.inputmask.min.js') }}"></script>
   <script src="{{url('/assets/libs/moment/min/moment.min.js')}}"></script>
   <script src="{{url('/dist/js/sidebarmenu.js')}}"></script>
   <script src="{{url('/dist/js/feather.min.js')}}"></script>

@@ -50,7 +50,7 @@
             <li><a href="#courses">Cursos</a></li>
             <li><a href="#blog">Notícias</a></li>
             <li><a href="#contact">Contato</a></li>
-            <li><a href="{{ route('donation.form') }}">Doar</a></li>
+            <li><a data-toggle="modal" data-target="#exampleModalCenter" style="cursor: pointer">Doar</a></li>
           </ul>
         </div>
       </div><!-- /.container -->
@@ -94,5 +94,7 @@
   <script src="{{ url('js/slick.min.js') }}"></script>
   <script src="{{ url('js/main.js') }}"></script>
   <script src="{{ url('js/fontawesome.js') }}"></script>
+  <script src="{{ url('assets/libs/inputmask/jquery.inputmask.min.js') }}"></script>
+  <script src="{{ url('js/inputmask.js') }}"></script>
 </body>
 </html>
