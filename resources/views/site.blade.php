@@ -22,7 +22,7 @@
                 <div class="col">
                   <div class="form-group">
                     <label for="name">Nome completo</label>
-                    <input type="text" name="name" id="name" maxlength="50" class="form-control" placeholder="Ex: João Silva Pereira" required>
+                    <input type="text" name="name" id="name" minlenght="6" maxlength="50" class="form-control" placeholder="Ex: João Silva Pereira" required>
                   </div>
                 </div>
               </div>
@@ -30,7 +30,7 @@
                 <div class="col">
                   <div class="form-group">
                     <label for="cpf">CPF</label>
-                    <input type="text" name="cpf" id="cpf" minlength="11" maxlength="11" class="form-control" placeholder="Ex: 999.999.999.99" required>
+                    <input type="cpf" name="cpf" id="cpf" minlength="14" maxlength="14" class="form-control" placeholder="Ex: 999.999.999.99" required>
                   </div>
                 </div>
               </div>
@@ -38,13 +38,13 @@
                 <div class="col">
                   <div class="form-group">
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email" maxlength="100" class="form-control" placeholder="Ex: joao.silva@hotmail.com" required>
+                    <input type="email" name="email" id="email" minlenght="6" maxlength="100" class="form-control" placeholder="Ex: joao.silva@hotmail.com" required>
                   </div>
                 </div>
                 <div class="col">
                   <div class="form-group">
                     <label for="phone">Telefone</label>
-                    <input type="text" name="phone" id="phone" maxlength="11" maxlength="11" class="form-control" placeholder="Ex: (99) 9 9999-9999" required>
+                    <input type="phone" name="phone" id="phone" minlength="16" maxlength="16" class="form-control" placeholder="Ex: (99) 9 9999-9999" required>
                   </div>
                 </div>
               </div>
@@ -55,7 +55,7 @@
                 <div class="col">
                   <div class="form-group">
                     <label for="value">Valor</label>
-                    <input type="text" name="value" id="value" class="form-control" placeholder="Ex: R$20,00" required>
+                    <input type="money" name="value" minlenght="5" id="value" class="form-control" placeholder="Ex: R$20,00" required>
                   </div>
                 </div>
                 <div class="col">
@@ -72,13 +72,13 @@
                 <div class="col">
                   <div class="form-group">
                     <label for="card_holder_name">Nome escrito no cartão</label>
-                    <input type="text" name="card_holder_name" id="card_holder_name" maxlength="25" class="form-control" placeholder="Ex: João S Pereira">
+                    <input type="text" name="card_holder_name" id="card_holder_name" minlength="6" maxlength="25" class="form-control" placeholder="Ex: João S Pereira">
                   </div>
                 </div>
                 <div class="col">
                   <div class="form-group">
                     <label for="card_number">Número do cartão</label>
-                    <input type="text" name="card_number" id="card_number" class="form-control" minlength="19" maxlength="19" maxlength="19" placeholder="Ex: 9999 9999 9999 9999">
+                    <input type="card_number" name="card_number" id="card_number" class="form-control" minlength="19" maxlength="19" maxlength="19" placeholder="Ex: 9999 9999 9999 9999">
                   </div>
                 </div>
               </div>
@@ -86,13 +86,13 @@
                 <div class="col">
                   <div class="form-group">
                     <label for="card_cvv">CVV</label>
-                    <input type="text" name="card_cvv" id="card_cvv" minlength="3" maxlength="3" class="form-control" placeholder="Ex: 999" required>
+                    <input type="card_cvv" name="card_cvv" id="card_cvv" minlength="3" maxlength="3" class="form-control" placeholder="Ex: 999" required>
                   </div>
                 </div>
                 <div class="col">
                   <div class="form-group">
                     <label for="card_expiration_date">Data de validade</label>
-                    <input type="text" name="card_expiration_date" id="card_expiration_date" class="form-control" maxlength="6" maxlength="6" placeholder="Ex: 032021" required>
+                    <input type="card_date" name="card_expiration_date" id="card_expiration_date" class="form-control" minlength="7" maxlength="7" placeholder="Ex: 06/2022" required>
                   </div>
                 </div>
               </div>
@@ -107,7 +107,6 @@
     </div>
   </div>
 </div>
-
 
   <div id="home" class="tr-banner">
     <div class="banner-content section-before bg-image" style="background-image: url(images/bg/banner-bg2.jpg);">
