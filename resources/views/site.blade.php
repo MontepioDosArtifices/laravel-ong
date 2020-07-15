@@ -58,15 +58,6 @@
                     <input type="money" name="value" minlenght="5" id="value" class="form-control" placeholder="Ex: R$20,00" required>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="form-group">
-                    <label for="payment-method">Forma de pagamento</label>
-                    <select class="custom-select" name="payment_method" id="payment-method" required>
-                      <option selected value="credit_card">Cartão de crédito</option>
-                      <option value="boleto">Boleto bancário</option>
-                    </select>
-                  </div>
-                </div>
               </div>
               <div class="row">
                 <div class="col">
