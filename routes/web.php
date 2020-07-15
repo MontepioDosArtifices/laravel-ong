@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'SiteController@index')->name('site');
+Route::get('/contato', 'SiteController@getContact')->name('site.contact');
+Route::post('/contato', 'SiteController@postContact')->name('site.contact.send');
 
 Route::get('postagem', 'SitePostController@index')->name('site.post');
 Route::get('postagem/{slug}', 'SitePostController@show')->name('site.post.show');
@@ -20,6 +22,8 @@ Route::get('/dashboard/login/', function () { return view('user-login'); })->nam
 Route::post('/dashboard/login/enviado', 'LoginController@index')->name('user.login.send');
 
 Route::get('/dashboard/perfil/{user}', 'ProfileController@show')->name('user.profile');
+
+// Route::get('sobre', 'StaticPageController@getAbout')->name('home');
 
 Route::group(['middleware' => 'usersession'], function () {
 
