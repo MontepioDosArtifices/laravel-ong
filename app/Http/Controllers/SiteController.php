@@ -21,11 +21,11 @@ class SiteController extends Controller
     return view('site', ['posts' => $posts, 'courses' => $courses]);
   }
 
-  public function getContact(){
+  public function getMail(){
     return redirect()->route('site');
   }
 
-  public function postContact(Request $request)
+  public function sendMail(Request $request)
   {
     $fields = $request->validate([
       'name'=> 'required|between:3,40',
@@ -33,10 +33,10 @@ class SiteController extends Controller
       'bodyMessage' => 'required|min:5'
     ]);
 
-    Mail::to('juliodemais11@gmail.com')->send(new ContactMail($fields));
+    Mail::to('montepioartifices@gmail.com')->send(new ContactMail($fields));
 
-    $request->session()->flash('success', 'Seu email enviado com sucesso! Obrigado pela sua opnião!');
-    return redirect()->route('site.contact');
+    $request->session()->flash('alert-success', 'Seu email foi enviado com sucesso!');
+    return redirect()->back();
   }
 
 }

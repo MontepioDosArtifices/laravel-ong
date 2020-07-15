@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'SiteController@index')->name('site');
-Route::get('/contato', 'SiteController@getContact')->name('site.contact');
-Route::post('/contato', 'SiteController@postContact')->name('site.contact.send');
+Route::get('/contato', 'SiteController@getMail')->name('site.contact');
+Route::post('/contato', 'SiteController@sendMail')->name('site.contact.send');
 
 Route::get('postagem', 'SitePostController@index')->name('site.post');
 Route::get('postagem/{slug}', 'SitePostController@show')->name('site.post.show');

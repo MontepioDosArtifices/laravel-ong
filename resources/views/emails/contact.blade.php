@@ -1,11 +1,4 @@
-<h1>Este é um email para contato que está sendo testado</h1>
-<p>Nesse email testaremos se as dúvidas, críticas, elogios das pessoas que acessam
-  nosso site estão sendo enviados para o email certo.
-</p>
+<h1 style="text-align: center">Novo email para você</h1>
 
-<p>Este email pertence a: </p>
-<ul>
-  <li><b>Nome: </b>{{ $name }}</li>
-  <li><b>Email: </b>{{ $email }}</li>
-  <li><b>Mensagem: </b>{{ $bodyMessage }}</li>
-</ul>
+<h3 style="text-align: center">Este email foi enviado por {{$name}}!</h3>
+<p style="text-align: center"><b>Mensagem: </b>{{ $bodyMessage }}</p>
