@@ -401,6 +401,7 @@
     <div class="section-content tr-bg-white">
       <div class="container">
         <div class="section-header section-header-2">
+          @include('partials.messages')
           <h1>Onde nos achar</h1>
           <div class="sub-title title-before">
             <p>Insira aqui o texto que deverá ser usado nesta área do site! Insira aqui o texto que deverá ser usado nesta área do site!</p>
@@ -408,21 +409,22 @@
         </div><!-- /.section-header -->
         <div class="row">
           <div class="col-md-7">
-            <form action="#" class="tr-form">
+          <form action="{{ route('site.contact.send') }}" class="tr-form" method="POST">
+            {{ csrf_field() }}
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input class="form-control" name="name" type="text" placeholder="Nome" value="" size="30" aria-required="true" required="required">
+                    <input class="form-control" name="name" type="text" placeholder="Nome" size="30" aria-required="true" required="required">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input class="form-control" id="email" name="email" type="text" placeholder="E-mail" value="" size="30" aria-required="true" required="required">
+                    <input class="form-control" id="email" name="email" type="text" placeholder="E-mail" size="30" aria-required="true" required="required">
                   </div>
                 </div>
               </div><!-- /.row -->
               <div class="form-group">
-                <textarea name="message" class="form-control" required="required" rows="7" placeholder="Escreva aqui. . ."></textarea>
+                <textarea name="bodyMessage" class="form-control" required="required" rows="7" placeholder="Escreva aqui. . ."></textarea>
               </div>
               <input type="submit" class="btn btn-primary btn-full" value="Enviar">
             </form><!-- /.tr-form -->
