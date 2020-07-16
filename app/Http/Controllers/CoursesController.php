@@ -56,11 +56,12 @@ class CoursesController extends Controller
 
   public function update(Request $request, Courses $course)
   {
-    $course->title = $request->title;
     $course->limit = $request->limit;
+    $course->title = $request->title;
     $course->description = $request->description;
     // $course->image = $request->image;
     $course->save();
+    if($this->checkLimit($course));
 
     return redirect()->route('course.index');
   }
@@ -69,5 +70,25 @@ class CoursesController extends Controller
   {
     DB::table('courses')->where('id', $course->id)->delete();
     return redirect()->route('course.index');
+  }
+
+  public function checkLimit(Courses $course)
+  {
+    $limit = (Courses::select('limit')->where('id', $course->id)->get())[0]->limit;
+    $occupied = DB::table('courses_students')->select('id')->where('course_id', $course->id)->get();
+
+    if (!isset($occupied[0])){
+      $occupied = 0;
+    } else{
+      $occupied = sizeof($occupied);
+    }
+
+    if ($occupied >= $limit) {
+      $change = DB::table('courses')->where('id', $course->id)->update(['full' => true]);
+      return false;
+    }else{
+      $change = DB::table('courses')->where('id', $course->id)->update(['full' => false]);
+      return true;
+    }
   }
 }
