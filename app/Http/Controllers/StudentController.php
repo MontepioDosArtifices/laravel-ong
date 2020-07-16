@@ -28,7 +28,7 @@ class StudentController extends Controller
   {
     $course = (int)$request->course;
 
-    if ($this->checkLimit($course)){
+    if ($this->change($course)){
 
       $student = new Student();
       $student->name = $request->name;
@@ -43,7 +43,9 @@ class StudentController extends Controller
         $change = DB::table('courses')->where('id', $course)->update(['full' => true]);
         return redirect()->route('site');
       }
+
       return redirect()->route('site');
+
     }
   }
 
@@ -62,6 +64,7 @@ class StudentController extends Controller
   {
     $student->name = $request->name;
     $student->email = $request->email;
+    $student->cpf = $request->cpf;
     $student->phone = $request->phone;
     $student->save();
 
@@ -79,6 +82,19 @@ class StudentController extends Controller
     return redirect()->route('course.index');
   }
 
+  public function change($course)
+  {
+    if (!$this->checkLimit($course))
+    {
+      $change = DB::table('courses')->where('id', $course)->update(['full' => true]);
+      return false;
+    }else
+    {
+      $change = DB::table('courses')->where('id', $course)->update(['full' => false]);
+      return true;
+    }
+  }
+
   public function checkLimit($course)
   {
     $limit = (Courses::select('limit')->where('id', $course)->get())[0]->limit;
@@ -90,12 +106,8 @@ class StudentController extends Controller
       $occupied = sizeof($occupied);
     }
 
-    if ($occupied >= $limit) {
-      $change = DB::table('courses')->where('id', $course)->update(['full' => true]);
-      return false;
-    }else{
-      $change = DB::table('courses')->where('id', $course)->update(['full' => false]);
-      return true;
-    }
+    if ($occupied >= $limit) return false;
+
+    return true;
   }
 }
