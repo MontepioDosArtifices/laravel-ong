@@ -21,10 +21,6 @@ class SiteController extends Controller
     return view('site', ['posts' => $posts, 'courses' => $courses]);
   }
 
-  public function getMail(){
-    return redirect()->route('site');
-  }
-
   public function sendMail(Request $request)
   {
     $fields = $request->validate([

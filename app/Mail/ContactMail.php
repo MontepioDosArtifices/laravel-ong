@@ -30,10 +30,10 @@ class ContactMail extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.contact')->with([
-          'name' => $this->inputs['name'],
-          'email' => $this->inputs['email'],
-          'bodyMessage' => $this->inputs['bodyMessage']
-        ]);
+      return $this->view('emails.contact')->with([
+        'name' => $this->inputs['name'],
+        'email' => $this->inputs['email'],
+        'bodyMessage' => $this->inputs['bodyMessage']
+      ])->subject("Contato do site");
     }
 }
