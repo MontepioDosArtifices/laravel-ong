@@ -25,8 +25,8 @@
             <input type="hidden" name="course" value="{{$course->id}}">
             <input type="text" name="name" class="form-control" placeholder="Nome" autofocus required>
             <input type="text" name="email" class="form-control" placeholder="Email" required>
-            <input type="text" name="cpf" class="form-control" placeholder="CPF" maxlength="11" required>
-            <input type="text" name="phone" class="form-control" placeholder="Ex: 75 9 8788-8888" maxlength="13"required></br>
+            <input type="cpf" name="cpf" class="form-control" placeholder="CPF" maxlength="15" required>
+            <input type="phone" name="phone" class="form-control" placeholder="Ex: 75 9 8788-8888" maxlength="16"required></br>
             <input type="submit" class="btn btn-primary" value="Inscreva-se agora">
           </form>
         </div><!-- /.row -->
