@@ -59,7 +59,7 @@ class CoursesController extends Controller
     $course->title = $request->title;
     $course->limit = $request->limit;
     $course->description = $request->description;
-    $course->image = $request->image;
+    // $course->image = $request->image;
     $course->save();
 
     return redirect()->route('course.index');
